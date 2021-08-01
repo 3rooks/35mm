@@ -1,0 +1,32 @@
+@mixin sizeCarrusel {
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+}
+
+//
+
+@mixin sizeGaleria {
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    min-width: 1fr;
+}
+
+//
+
+@mixin colorTexto {
+    @if ($colortext == white) {
+        color: $white;
+    } @else if ($colortext == black) {
+        color: $black;
+    } @else if ($colortext == red) {
+        color: $red;
+    } @else if ($colortext == green) {
+        color: $green;
+    } @else if ($colortext == blue) {
+        color: $blue;
+    } @else {
+        background-color: $white;
+    }
+}

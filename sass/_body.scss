@@ -1,0 +1,18 @@
+html {
+    text-transform: capitalize;
+}
+
+//
+
+body {
+    background-image: $bg-img;
+
+    p {
+        @include colorTexto();
+        font-family: $fonttext;
+    }
+
+    a {
+        color: $white !important;
+    }
+}

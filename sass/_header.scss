@@ -1,0 +1,12 @@
+@media only screen and (min-width: 300px) {
+    .header__buscador--imput {
+        display: none;
+    }
+}
+
+.header__logo--titulo {
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: underline !important;
+}

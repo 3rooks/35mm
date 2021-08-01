@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: inherit;
+  list-style: none;
+  text-decoration: none !important;
+}
+
+html {
+  text-transform: capitalize;
+}
+
+body {
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/hotel-wallpaper-black.png");
+}
+
+body p {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body a {
+  color: white !important;
+}
+
+@media only screen and (min-width: 300px) {
+  .header__buscador--imput {
+    display: none;
+  }
+}
+
+.header__logo--titulo {
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 2rem;
+  text-decoration: underline !important;
+}
+
+.carrusel {
+  width: 100%;
+  height: 0vh;
+}
+
+.carrusel .carrusel__img--c1 {
+  background-image: url("../img/c1.jpg");
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+}
+
+.carrusel .carrusel__img--c2 {
+  background-image: url("../img/c2.jpg");
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+}
+
+.carrusel .carrusel__img--c3 {
+  background-image: url("../img/c3.jpg");
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+}
+
+.grid {
+  margin-top: 500px;
+  height: 100%;
+}
+
+.grid .grid__galeria {
+  display: -ms-grid;
+  display: grid;
+}
+
+.grid .grid__galeria .grid__img--i1 {
+  background-image: url("../img/i1.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  min-width: 1fr;
+}
+
+.grid .grid__galeria .grid__img--i2 {
+  background-image: url("../img/i2.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  min-width: 1fr;
+}
+
+.grid .grid__galeria .grid__img--i3 {
+  background-image: url("../img/i3.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  min-width: 1fr;
+}
+
+.grid .grid__galeria .grid__img--i4 {
+  background-image: url("../img/i4.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  min-width: 1fr;
+}
+
+.grid .grid__galeria .grid__img--i5 {
+  background-image: url("../img/i5.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  min-width: 1fr;
+}
+
+.grid .grid__galeria .grid__img--i6 {
+  background-image: url("../img/i6.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  min-width: 1fr;
+}
+
+.grid .grid__galeria .grid__img--i7 {
+  background-image: url("../img/i7.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  min-width: 1fr;
+}
+
+.grid .grid__galeria .grid__img--i8 {
+  background-image: url("../img/i8.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  min-width: 1fr;
+}
+
+.grid .grid__galeria .grid__img:hover {
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+@media only screen and (min-width: 300px) {
+  .grid .grid__galeria {
+        grid-template-areas: "auto" "auto" "auto" "auto" "auto" "auto" "auto" "auto";
+    -ms-grid-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .grid .grid__galeria {
+        grid-template-areas: "auto" "auto" "auto" "auto" "auto" "auto" "auto" "auto";
+    -ms-grid-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .grid .grid__galeria {
+        grid-template-areas: "auto auto" "auto auto" "auto auto" "auto auto";
+    -ms-grid-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .grid .grid__galeria {
+        grid-template-areas: "auto auto auto" "auto auto auto" "auto auto auto";
+    -ms-grid-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .grid .grid__galeria {
+        grid-template-areas: "auto auto auto auto" "auto auto auto auto";
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .grid .grid__galeria {
+        grid-template-areas: "auto auto auto auto" "auto auto auto auto";
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.footer__main {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.footer__main .footer__social--redes {
+  margin: 1rem;
+}
+
+.footer__main .footer__social--redes:hover {
+  -webkit-filter: drop-shadow(1px 1px 15px white);
+          filter: drop-shadow(1px 1px 15px white);
+}
+
+.footer__main .labels__offcanvas {
+  text-align: left;
+}
+/*# sourceMappingURL=estilos.css.map */

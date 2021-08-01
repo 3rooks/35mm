@@ -1,0 +1,16 @@
+.footer__main {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+
+    .footer__social--redes {
+        margin: 1rem;
+
+        &:hover {
+            filter: drop-shadow(1px 1px 15px white);
+        }
+    }
+    .labels__offcanvas {
+        text-align: left;
+    }
+}
