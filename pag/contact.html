@@ -6,27 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/icono.png" type="image/x-icon">
-    <title>Contact</title>
-    <!-----------------------------------------------------bootstrap---------------------------------------------------->
+    <title>Contact Us</title>
+    <!-- BS -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
-    <!----------------------------------------------------bootstrap----------------------------------------------------->
-    <!----------------------------------------------------META SEO------------------------------------------------------>
+    <!-- BS -->
+    <!-- META SEO -->
     <meta name="author" content="me">
-    <meta name="title" content="Contac">
+    <meta name="title" content="Contact">
     <!---->
-    <meta name="description" content="Contactanos ,Contact Us">
-    <meta name="keywords" content="Contacto, Contact, Contact Us">
-    <!----------------------------------------------------META SEO------------------------------------------------------>
+    <meta name="description" content="Contact Us">
+    <meta name="keywords" content="Contact Us, About Us">
+    <!---->
+    <meta name="ROBOTS" content="INDEX, FOLLOW">
+    <meta name="ROBOTS" content="ALL">
+    <!---->
+    <meta name="revisit-after" content="5 days">
+    <!---->
+    <meta name="language" content="English">
+    <meta name="Content-Language" content="En">
+    <!---->
+    <meta name="distribution" content="Global">
+    <meta name="resource-type" content="Document">
+    <meta name="doc-type" content="Web Page">
+    <!---->
+    <!---->
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="">
+    <meta name="GOOGLEBOT" content="index, follow, all">
+    <meta name="google-site-verification" content="">
+    <!---->
+    <!---->
+    <!-- META SEO-->
     <style>
         * {
             margin: 0;
@@ -34,14 +46,14 @@
             box-sizing: border-box;
             color: inherit;
             list-style: none;
-            text-decoration: none;
+            text-decoration: none !important;
         }
 
-        /* ----------------------------------------------------------------------------------------BODY */
-
+        /**/
         body {
             color: white !important;
-            background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/hotel-wallpaper-black.png");
+            text-transform: capitalize;
+            background-image: url("../img/background.png");
 
         }
 
@@ -56,41 +68,62 @@
             text-decoration: underline !important;
         }
 
-        /* ----------------------------------------------------------------------------------------*/
+        /**/
         .card {
             height: 500px;
-            background-image: url("../img/contact.jpeg");
-            background-position: top;
+            width: 100%;
+            background-image: url("../img/contact.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
             background-size: cover;
         }
 
         .card-img-overlay {
-            padding-top: 13rem;
+            padding-top: 225px;
         }
 
-        /* ----------------------------------------------------------------------------------------*/
-        .formulario {
-            padding: 1rem 0px;
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
         }
 
-        /* ----------------------------------------------------------------------------------------FOOTER */
+        .grid__item--1 {
+            padding: 1rem 2rem;
+        }
 
-        footer {
+        .flex {
+            display: flex;
+            width: 100%;
+            height: auto;
+            padding: 0 2rem;
+        }
+
+        /**/
+        .footer__main {
             padding-top: 1rem;
+            padding-bottom: 1rem;
+            text-align: center;
         }
 
-        .redes {
+        .footer__main .footer__social--redes {
             margin: 1rem;
         }
 
-        /* ----------------------------------------------------------------------------------------FOOTER END */
+        .footer__main .footer__social--redes:hover {
+            -webkit-filter: drop-shadow(1px 1px 15px white);
+            filter: drop-shadow(1px 1px 15px white);
+        }
+
+        .footer__main .labels__offcanvas {
+            text-align: left;
+        }
     </style>
 </head>
 
 <body>
-    <!-------------------------------------------------------------------------------------------------------HEADER-->
+    <!--HEADER-->
     <header class="bg-dark">
-        <!--class="fixed-top" -->
+        <!-- "fixed-top" -->
         <div class="container-fluid navbar">
             <nav class="navbar-expand-lg navbar-dark">
                 <div class="container">
@@ -107,21 +140,21 @@
                                 <a class="nav-link active" href="#social">Social</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="#contacto">Contact</a>
+                                <a class="nav-link active" href="#aboutUs">About Us</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
 
-            <a class="header__logo position-absolute top-50 start-50 translate-middle" href="../index.html">
+            <a class="position-absolute top-50 start-50 translate-middle" href="../index.html">
                 <h1 class="header__logo--titulo">35mm</h1>
             </a>
 
             <div>
                 <a href="../index.html">
                     <button class="btn btn-light" type="submit">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                             class="bi bi-arrow-left-square" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
                                 d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm11.5 5.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
@@ -131,77 +164,125 @@
             </div>
         </div>
     </header>
-    <!----------------------------------------------------------------------------------------------------HEADER END-->
-    <!--------------------------------------------------------------------------------------------MAIN---------->
+    <!--HEADER END-->
+    <!--MAIN-->
     <main>
         <div>
             <div class="card bg-dark text-white col">
                 <!-- <img src="" class="card-img" alt="..." > -->
                 <div class="card-img-overlay">
-                    <h1 class="card-title text-center">Contact Us</h1>
-                    <p class="card-text text-center"><strong>For press and business inquiries please fill out the form
-                            below. For all other
-                            info, you can subscribe to our newsletter and follow us on social media.</strong></p>
+                    <h2 class="card-title text-center"><strong>Contact Us</strong></h2>
+                    <p class="card-text text-center">
+                        <strong>For press and business inquiries please fill out the form below. For all other info, you
+                            can subscribe to our newsletter and follow us on social media.
+                        </strong>
+                    </p>
                 </div>
             </div>
         </div>
-        <!------------------------------------------------------------------------------------------------------>
-        <div class="container formulario" id="contacto">
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col-8">
-                    <form class="row g-2">
-                        <div class="col-md-6">
-                            <label for="name" class="form-label">First Name *</label>
-                            <input type="email" class="form-control" id="name" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="inputPassword4" class="form-label">Last Name</label>
-                            <input type="text" class="form-control" id="name2">
-                        </div>
+        <!---->
+        <div class="grid">
+            <div></div>
+            <div class="grid__item--1">
+                <div class="col">
+                    <form class="row g-3">
                         <div class="col-12">
-                            <label for="email" class="form-label">Email Address *</label>
+                            <label for="email" class="form-label"><strong>Email Address *</strong></label>
                             <input type="text" class="form-control" id="email" placeholder="" required>
                         </div>
                         <div class="col-12">
-                            <label for="sub" class="form-label">Subject *</label>
+                            <label for="sub" class="form-label"><strong>Subject *</strong></label>
                             <input type="text" class="form-control" id="sub" placeholder="" required>
                         </div>
-                        <div class="col-md-12">
-                            <label for="mensaje" class="form-label">Message *</label>
+                        <div class="col-12">
+                            <label for="mensaje" class="form-label"><strong>Message *</strong></label>
                             <textarea class="form-control" id="mensaje" rows="3"></textarea>
                         </div>
                         <div class="col-12">
-                            <button type="submit" class="btn btn-primary">Send</button required>
+                            <button type="submit" class="btn btn-primary"><strong>Send</strong></button>
                         </div>
                     </form>
                 </div>
-                <div class="col-2"></div>
+            </div>
+            <div></div>
+        </div>
+        <!---->
+        <hr class="text-white">
+        <div class="flex text-center" id="aboutUs">
+            <div class="flex-item">
+                <hr>
+                <h3>About Us</h3>
+                <p>
+                    <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Who are most worthy thing, Or, The
+                        modes of accusantium id elmo singing? Duties eagerness fall draw Adipisci Hence an excellent
+                        exercise, explain Perspiciatis And investigations. Eager pleasures of Commodus choice born of
+                        necessity. Pain just is liable While blandishments talk please! Who resilience Recusandae life
+                        of the payments. I can reject Assumenda Explicabo advantages which will be chosen inventor
+                        pwned, No follow their incidence are more reality experiencing pain, sorrow, when she was free.
+                        Forward error birth to nothing! But the inventor, the very freedom that I hold in my delusion,
+                        who the very Accusamus. Truth PLEASURES? By reason of pleasure, the pleasure they afford elmo
+                        singing Dolorem Aspernatur for blandishments: Great.
+                    </em>
+                </p>
+                <hr>
             </div>
         </div>
+        <hr class="text-white">
     </main>
-    <!----------------------------------------------------------------------------------------MAIN END-------------->
-    <!-----------------------------------------------------------------------------------------------FOOTER---------->
-    <footer class="container-fluid d-flex flex-column align-items-center bg-dark">
+    <!--MAIN END-->
+    <!--FOOTER-->
+    <footer class="footer__main container-fluid d-flex flex-column align-items-center bg-dark">
         <div class="row">
             <p><strong>Sign up</strong> with your email address to receive news and updates.</p>
         </div>
-        <form class="row g-1">
+        <div class="row g-1">
             <div class="col-auto">
-                <label for="email" class="visually-hidden"></label>
-                <input type="text" class="form-control" id="email" placeholder="Email Address">
+                <button type="button" class="btn btn-primary mb-3" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasSubscribe" aria-controls="offcanvasSubscribe">
+                    <strong><em>SUBSCRIBE</em></strong>
+                </button>
+                <!-- offcanvas -->
+                <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasSubscribe"
+                    aria-labelledby="offcanvasRegister">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title text-dark" id="offcanvasRegister">Subscribe / Register</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <form>
+                            <div class="labels__offcanvas">
+                                <label for="name"><strong><em class="text-dark">Nickname:</em></strong></label>
+                                <input type="text" class="form-control" id="name" placeholder="Name (Optional)">
+                                <label for="email"><strong><em class="text-dark">Email:</em></strong></label>
+                                <input type="text" class="form-control" id="email" placeholder="Email Address" required>
+                            </div>
+                            <br>
+                            <div>
+                                <button type="button" class="btn btn-secondary"
+                                    data-bs-dismiss="offcanvas">Close</button>
+                                <button type="submit" class="btn btn-primary">Sign Up</button>
+                            </div>
+                            <hr class="text-dark">
+                        </form>
+                        <hr class="text-dark">
+                        <p class="text-dark">Hi there! Thank you for being part of this community.</p>
+                        <p class="text-dark">For any suggestion you can send us an email.</p>
+                        <p class="text-dark">You can also follow us on our social media.</p>
+                        <p class="text-dark">Have a nice day.</p>
+                        <hr class="text-dark">
+                    </div>
+                </div>
+                <!-- offcanvas -->
             </div>
-            <div class="col-auto">
-                <button type="submit" class="btn btn-primary mb-3">SUBSCRIBE</button>
-            </div>
-        </form>
+        </div>
         <div class="row">
             <p>We respect your privacy.</p>
         </div>
         <div class="row" id="social">
             <ul class="col d-flex">
-                <li class="redes">
-                    <a href="https://www.instagram.com/" target="_blank">
+                <li class="footer__social--redes">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                             class="bi bi-instagram" viewBox="0 0 16 16">
                             <path
@@ -209,7 +290,8 @@
                         </svg>
                     </a>
                 </li>
-                <li class="redes"><a href="https://twitter.com/?lang=es" target="_blank">
+                <li class="footer__social--redes"><a href="https://twitter.com/?lang=es" target="_blank"
+                        rel="noopener noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                             class="bi bi-twitter" viewBox="0 0 16 16">
                             <path
@@ -217,16 +299,14 @@
                         </svg>
                     </a>
                 </li>
-                <li class="redes">
-                    <a href="https://www.facebook.com/" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                            class="bi bi-facebook" viewBox="0 0 16 16">
-                            <path
-                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                        </svg>
+                <li class="footer__social--redes">
+                    <a href="https://letterboxd.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://a.ltrbxd.com/logos/letterboxd-decal-dots-neg-rgb.svg" alt="letterboxd"
+                            width="25" height="25">
                     </a>
                 </li>
-                <li class="redes"><a href="https://discord.com/" target="_blank">
+                <li class="footer__social--redes"><a href="https://discord.com/" target="_blank"
+                        rel="noopener noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                             class="bi bi-discord" viewBox="0 0 16 16">
                             <path
@@ -236,13 +316,12 @@
                         </svg>
                     </a>
                 </li>
-                <li class="redes"><a href="https://www.reddit.com/" target="_blank"><svg
-                            xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                            class="bi bi-reddit" viewBox="0 0 16 16">
+                <li class="footer__social--redes"><a href="https://web.telegram.org/z/" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-telegram" viewBox="0 0 16 16">
                             <path
-                                d="M6.167 8a.831.831 0 0 0-.83.83c0 .459.372.84.83.831a.831.831 0 0 0 0-1.661zm1.843 3.647c.315 0 1.403-.038 1.976-.611a.232.232 0 0 0 0-.306.213.213 0 0 0-.306 0c-.353.363-1.126.487-1.67.487-.545 0-1.308-.124-1.671-.487a.213.213 0 0 0-.306 0 .213.213 0 0 0 0 .306c.564.563 1.652.61 1.977.61zm.992-2.807c0 .458.373.83.831.83.458 0 .83-.381.83-.83a.831.831 0 0 0-1.66 0z" />
-                            <path
-                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.828-1.165c-.315 0-.602.124-.812.325-.801-.573-1.9-.945-3.121-.993l.534-2.501 1.738.372a.83.83 0 1 0 .83-.869.83.83 0 0 0-.744.468l-1.938-.41a.203.203 0 0 0-.153.028.186.186 0 0 0-.086.134l-.592 2.788c-1.24.038-2.358.41-3.17.992-.21-.2-.496-.324-.81-.324a1.163 1.163 0 0 0-.478 2.224c-.02.115-.029.23-.029.353 0 1.795 2.091 3.256 4.669 3.256 2.577 0 4.668-1.451 4.668-3.256 0-.114-.01-.238-.029-.353.401-.181.688-.592.688-1.069 0-.65-.525-1.165-1.165-1.165z" />
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
                         </svg>
                     </a>
                 </li>
@@ -252,7 +331,16 @@
             <p><strong>© 2021 | Copyright</strong></p>
         </div>
     </footer>
-    <!----------------------------------------------------------------------------------------------FOOTER END----------->
+    <!--FOOTER END-->
+    <!-- BS -->
+    <!-- Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <!-- BS -->
 </body>
 
 </html>
