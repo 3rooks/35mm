@@ -10,7 +10,71 @@
             filter: drop-shadow(1px 1px 15px white);
         }
     }
-    .labels__offcanvas {
-        text-align: left;
+}
+
+#boton-sub {
+    border: 4px double white;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    overflow: hidden;
+    span {
+        position: absolute;
+        display: block;
+    }
+    .span1 {
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, transparent, #0d6efd);
+    }
+    .span2 {
+        top: -100%;
+        right: 0;
+        width: 3px;
+        height: 100%;
+        background: linear-gradient(180deg, transparent, #0d6efd);
+        transition-delay: 0.5s;
+    }
+    .span3 {
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(270deg, transparent, #0d6efd);
+    }
+    .span4 {
+        bottom: -100%;
+        left: 0;
+        width: 3px;
+        height: 100%;
+        background: linear-gradient(360deg, transparent, #0d6efd);
+    }
+    &:hover {
+        background: #0d6efd;
+        box-shadow: 0 0 10px #0d6efd, 0 0 40px #0d6efd, 0 0 80px #0d6efd;
+        transition-delay: 1s;
+    }
+    &:hover .span1 {
+        left: 100%;
+        transition: 1s;
+    }
+    &:hover .span2 {
+        top: 100%;
+        transition: 1s;
+        transition-delay: 0.25s;
+    }
+    &:hover .span3 {
+        right: 100%;
+        transition: 1s;
+        transition-delay: 0.5s;
+    }
+    &:hover .span4 {
+        bottom: 100%;
+        transition: 1s;
+        transition-delay: 0.75s;
     }
 }

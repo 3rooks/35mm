@@ -4,3 +4,29 @@
     font-size: 2rem;
     text-decoration: underline !important;
 }
+
+.canvas__nav--body {
+    position: relative;
+    top: -20px;
+    .lista__nav--redes {
+        padding-top: 5px;
+    }
+    .nav__social--redes {
+        padding: 5px 10%;
+    }
+    .text__nav--redes {
+        padding: 0 10px;
+    }
+}
+
+.dropdown-menu {
+    li {
+        padding: 3px;
+        em {
+            padding: 0 10px;
+        }
+    }
+    a:hover {
+        background-color: #212529;
+    }
+}

@@ -54,7 +54,6 @@
             color: white !important;
             text-transform: capitalize;
             background-image: url("../img/background.png");
-
         }
 
         a {
@@ -68,9 +67,37 @@
             text-decoration: underline !important;
         }
 
+        .canvas__nav--body {
+            position: relative;
+            top: -20px;
+        }
+
+        .canvas__nav--body .lista__nav--redes {
+            padding-top: 5px;
+        }
+
+        .canvas__nav--body .nav__social--redes {
+            padding: 5px 10%;
+        }
+
+        .canvas__nav--body .text__nav--redes {
+            padding: 0 10px;
+        }
+
+        .dropdown-menu li {
+            padding: 3px;
+        }
+
+        .dropdown-menu li em {
+            padding: 0 10px;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #212529;
+        }
+
         /**/
-        .card {
-            height: 500px;
+        .card-header {
             width: 100%;
             background-image: url("../img/c1.jpg");
             background-repeat: no-repeat;
@@ -79,7 +106,9 @@
         }
 
         .card-img-overlay {
-            padding-top: 225px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         /**/
@@ -98,6 +127,36 @@
             justify-content: center;
         }
 
+        .targetas {
+            padding: 0 1rem;
+        }
+
+        .card-img-top:hover {
+            transition: 1.5s;
+            filter: grayscale(100%);
+        }
+
+        .sangria {
+            padding-left: 2rem;
+        }
+
+        .comentarios {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .comentarios em {
+            padding-left: 1rem;
+        }
+
+        .box-comentarios {
+            display: grid;
+            padding-top: 1rem;
+            padding-left: 1rem;
+
+        }
+
         /**/
         .footer__main {
             padding-top: 1rem;
@@ -114,8 +173,95 @@
             filter: drop-shadow(1px 1px 15px white);
         }
 
-        .footer__main .labels__offcanvas {
-            text-align: left;
+        #boton-sub {
+            border: 4px double white;
+            width: 100%;
+            position: relative;
+            display: inline-block;
+            padding: 10px 20px;
+            letter-spacing: 1px;
+            overflow: hidden;
+        }
+
+        #boton-sub span {
+            position: absolute;
+            display: block;
+        }
+
+        #boton-sub .span1 {
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 3px;
+            background: -webkit-gradient(linear, left top, right top, from(transparent), to(#0d6efd));
+            background: linear-gradient(90deg, transparent, #0d6efd);
+        }
+
+        #boton-sub .span2 {
+            top: -100%;
+            right: 0;
+            width: 3px;
+            height: 100%;
+            background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#0d6efd));
+            background: linear-gradient(180deg, transparent, #0d6efd);
+            -webkit-transition-delay: 0.5s;
+            transition-delay: 0.5s;
+        }
+
+        #boton-sub .span3 {
+            bottom: 0;
+            right: -100%;
+            width: 100%;
+            height: 3px;
+            background: -webkit-gradient(linear, right top, left top, from(transparent), to(#0d6efd));
+            background: linear-gradient(270deg, transparent, #0d6efd);
+        }
+
+        #boton-sub .span4 {
+            bottom: -100%;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#0d6efd));
+            background: linear-gradient(360deg, transparent, #0d6efd);
+        }
+
+        #boton-sub:hover {
+            background: #0d6efd;
+            -webkit-box-shadow: 0 0 10px #0d6efd, 0 0 40px #0d6efd, 0 0 80px #0d6efd;
+            box-shadow: 0 0 10px #0d6efd, 0 0 40px #0d6efd, 0 0 80px #0d6efd;
+            -webkit-transition-delay: 1s;
+            transition-delay: 1s;
+        }
+
+        #boton-sub:hover .span1 {
+            left: 100%;
+            -webkit-transition: 1s;
+            transition: 1s;
+        }
+
+        #boton-sub:hover .span2 {
+            top: 100%;
+            -webkit-transition: 1s;
+            transition: 1s;
+            -webkit-transition-delay: 0.25s;
+            transition-delay: 0.25s;
+        }
+
+        #boton-sub:hover .span3 {
+            right: 100%;
+            -webkit-transition: 1s;
+            transition: 1s;
+            -webkit-transition-delay: 0.5s;
+            transition-delay: 0.5s;
+        }
+
+        #boton-sub:hover .span4 {
+            bottom: 100%;
+            -webkit-transition: 1s;
+            transition: 1s;
+            -webkit-transition-delay: 0.75s;
+            transition-delay: 0.75s;
         }
 
         /*****************/
@@ -131,8 +277,12 @@
                 grid-template-columns: 0% auto 0%;
             }
 
-            iframe {
-                height: 315px;
+            .card-header {
+                height: 500px;
+            }
+
+            .box-comentarios {
+                grid-template-columns: 1fr;
             }
         }
 
@@ -141,8 +291,12 @@
                 grid-template-columns: 0% auto 0%;
             }
 
-            iframe {
-                height: 315px;
+            .card-header {
+                height: 525px;
+            }
+
+            .box-comentarios {
+                grid-template-columns: 1fr;
             }
         }
 
@@ -151,8 +305,12 @@
                 grid-template-columns: 5% auto 5%;
             }
 
-            iframe {
-                height: 415px;
+            .card-header {
+                height: 550px;
+            }
+
+            .box-comentarios {
+                grid-template-columns: 1fr 1fr;
             }
         }
 
@@ -161,28 +319,40 @@
                 grid-template-columns: 10% auto 10%;
             }
 
-            iframe {
-                height: 415px;
+            .card-header {
+                height: 550px;
+            }
+
+            .box-comentarios {
+                grid-template-columns: 1fr 1fr;
             }
         }
 
         @media only screen and (min-width: 1200px) {
             .grid-container {
-                grid-template-columns: 15% auto 15%;
+                grid-template-columns: 10% auto 10%;
             }
 
-            iframe {
-                height: 515px;
+            .card-header {
+                height: 600px;
+            }
+
+            .box-comentarios {
+                grid-template-columns: 1fr 1fr 1fr;
             }
         }
 
         @media only screen and (min-width: 1400px) {
             .grid-container {
-                grid-template-columns: 20% auto 20%;
+                grid-template-columns: 10% auto 10%;
             }
 
-            iframe {
-                height: 515px;
+            .card-header {
+                height: 600px;
+            }
+
+            .box-comentarios {
+                grid-template-columns: 1fr 1fr 1fr;
             }
         }
     </style>
@@ -195,17 +365,178 @@
         <div class="container-fluid navbar">
             <nav class="navbar-expand-lg navbar-dark">
                 <div class="container">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavegador" aria-controls="offcanvasNavegador" aria-expanded="false"
+                        aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <!--offcanvas nav-->
+                    <div class="offcanvas offcanvas-start bg-dark" data-bs-scroll="true" tabindex="-1"
+                        id="offcanvasNavegador" aria-labelledby="offcanvasNavNav">
+                        <div class="offcanvas-header">
+                            <p class="offcanvas-title" id="offcanvasNavNav"></p>
+                            <button type="button" class="btn-close btn-close-white text-reset"
+                                data-bs-dismiss="offcanvas" aria-label="Close">
+                            </button>
+                        </div>
+                        <div class="offcanvas-body canvas__nav--body">
+                            <div class="accordion accordion-flush" id="accordionNav">
+                                <div class="accordion-item">
+                                    <a href="../index.html">
+                                        <p class="accordion-header accordion-button collapsed text-white bg-dark">
+                                            Home
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="accordion-item">
+                                    <p class="accordion-header" id="flush-headingOne">
+                                        <bottom class="accordion-button collapsed text-white bg-dark" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                            aria-expanded="false" aria-controls="flush-collapseOne">
+                                            Social
+                                        </bottom>
+                                    </p>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse bg-dark"
+                                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionNav">
+                                        <div class="row">
+                                            <ul class="lista__nav--redes">
+                                                <li class="nav__social--redes">
+                                                    <a href="https://www.instagram.com/" target="_blank"
+                                                        rel="noopener noreferrer">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                            fill="currentColor" class="bi bi-instagram"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                                        </svg>
+                                                        <em class="text__nav--redes">Instagram</em>
+                                                    </a>
+                                                </li>
+                                                <li class="nav__social--redes">
+                                                    <a href="https://twitter.com/?lang=es" target="_blank"
+                                                        rel="noopener noreferrer">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                            fill="currentColor" class="bi bi-twitter"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                                                        </svg>
+                                                        <em class="text__nav--redes">Twitter</em>
+                                                    </a>
+                                                </li>
+                                                <li class="nav__social--redes">
+                                                    <a href="https://letterboxd.com/" target="_blank"
+                                                        rel="noopener noreferrer">
+                                                        <img src="https://a.ltrbxd.com/logos/letterboxd-decal-dots-neg-rgb.svg"
+                                                            alt="letterboxd" width="25" height="25">
+                                                        <em class="text__nav--redes">Letterboxd</em>
+                                                    </a>
+                                                </li>
+                                                <li class="nav__social--redes">
+                                                    <a href="https://discord.com/" target="_blank"
+                                                        rel="noopener noreferrer">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                            fill="currentColor" class="bi bi-discord"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M6.552 6.712c-.456 0-.816.4-.816.888s.368.888.816.888c.456 0 .816-.4.816-.888.008-.488-.36-.888-.816-.888zm2.92 0c-.456 0-.816.4-.816.888s.368.888.816.888c.456 0 .816-.4.816-.888s-.36-.888-.816-.888z" />
+                                                            <path
+                                                                d="M13.36 0H2.64C1.736 0 1 .736 1 1.648v10.816c0 .912.736 1.648 1.64 1.648h9.072l-.424-1.48 1.024.952.968.896L15 16V1.648C15 .736 14.264 0 13.36 0zm-3.088 10.448s-.288-.344-.528-.648c1.048-.296 1.448-.952 1.448-.952-.328.216-.64.368-.92.472-.4.168-.784.28-1.16.344a5.604 5.604 0 0 1-2.072-.008 6.716 6.716 0 0 1-1.176-.344 4.688 4.688 0 0 1-.584-.272c-.024-.016-.048-.024-.072-.04-.016-.008-.024-.016-.032-.024-.144-.08-.224-.136-.224-.136s.384.64 1.4.944c-.24.304-.536.664-.536.664-1.768-.056-2.44-1.216-2.44-1.216 0-2.576 1.152-4.664 1.152-4.664 1.152-.864 2.248-.84 2.248-.84l.08.096c-1.44.416-2.104 1.048-2.104 1.048s.176-.096.472-.232c.856-.376 1.536-.48 1.816-.504.048-.008.088-.016.136-.016a6.521 6.521 0 0 1 4.024.752s-.632-.6-1.992-1.016l.112-.128s1.096-.024 2.248.84c0 0 1.152 2.088 1.152 4.664 0 0-.68 1.16-2.448 1.216z" />
+                                                        </svg>
+                                                        <em class="text__nav--redes">Discord</em>
+                                                    </a>
+                                                </li>
+                                                <li class="nav__social--redes">
+                                                    <a href="https://web.telegram.org/z/" target="_blank"
+                                                        rel="noopener noreferrer">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                            fill="currentColor" class="bi bi-telegram"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
+                                                        </svg>
+                                                        <em class="text__nav--redes">Telegram</em>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item bg-dark">
+                                    <a href="../pag/contact.html">
+                                        <p class="accordion-header accordion-button collapsed text-white bg-dark">
+                                            Contact
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--offcanvas nav-->
+                    <div class="collapse navbar-collapse">
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="#social">Social</a>
+                                <a class="nav-link active dropdown" data-bs-toggle="dropdown" href="#" role="button"
+                                    aria-expanded="false">Social</a>
+                                <ul class="dropdown-menu bg-dark">
+                                    <li>
+                                        <a class="dropdown-item" href="https://www.instagram.com/" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                            </svg>
+                                            <em>Instagram</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="https://twitter.com/?lang=es" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                                            </svg>
+                                            <em>Twitter</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="https://letterboxd.com/" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <img src="https://a.ltrbxd.com/logos/letterboxd-decal-dots-neg-rgb.svg"
+                                                alt="letterboxd" width="25" height="25">
+                                            <em>Letterboxd</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="https://discord.com/" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M6.552 6.712c-.456 0-.816.4-.816.888s.368.888.816.888c.456 0 .816-.4.816-.888.008-.488-.36-.888-.816-.888zm2.92 0c-.456 0-.816.4-.816.888s.368.888.816.888c.456 0 .816-.4.816-.888s-.36-.888-.816-.888z" />
+                                                <path
+                                                    d="M13.36 0H2.64C1.736 0 1 .736 1 1.648v10.816c0 .912.736 1.648 1.64 1.648h9.072l-.424-1.48 1.024.952.968.896L15 16V1.648C15 .736 14.264 0 13.36 0zm-3.088 10.448s-.288-.344-.528-.648c1.048-.296 1.448-.952 1.448-.952-.328.216-.64.368-.92.472-.4.168-.784.28-1.16.344a5.604 5.604 0 0 1-2.072-.008 6.716 6.716 0 0 1-1.176-.344 4.688 4.688 0 0 1-.584-.272c-.024-.016-.048-.024-.072-.04-.016-.008-.024-.016-.032-.024-.144-.08-.224-.136-.224-.136s.384.64 1.4.944c-.24.304-.536.664-.536.664-1.768-.056-2.44-1.216-2.44-1.216 0-2.576 1.152-4.664 1.152-4.664 1.152-.864 2.248-.84 2.248-.84l.08.096c-1.44.416-2.104 1.048-2.104 1.048s.176-.096.472-.232c.856-.376 1.536-.48 1.816-.504.048-.008.088-.016.136-.016a6.521 6.521 0 0 1 4.024.752s-.632-.6-1.992-1.016l.112-.128s1.096-.024 2.248.84c0 0 1.152 2.088 1.152 4.664 0 0-.68 1.16-2.448 1.216z" />
+                                            </svg>
+                                            <em>Discord</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="https://web.telegram.org/z/" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
+                                            </svg>
+                                            <em>Telegram</em>
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" href="../pag/contact.html">Contact</a>
@@ -214,11 +545,11 @@
                     </div>
                 </div>
             </nav>
-
+            <!---->
             <a class="position-absolute top-50 start-50 translate-middle" href="../index.html">
                 <h1 class="header__logo--titulo">35mm</h1>
             </a>
-
+            <!---->
             <div>
                 <a href="../index.html">
                     <button class="btn btn-light" type="submit">
@@ -235,37 +566,48 @@
     <!--HEADER END-->
     <!--MAIN-->
     <main>
-        <div>
-            <div class="card bg-dark text-white col">
+        <section>
+            <div class="card bg-dark text-white col card-header">
                 <!-- <img src="" class="card-img" alt="..." > -->
                 <div class="card-img-overlay">
-                    <h2 class="card-title text-center"><strong>The Master (2012)</strong></h2>
-                    <p class="card-text text-center"><strong>Dir. Paul Thomas Anderson (Drama)</strong></p>
+                    <div>
+                        <h2 class="card-title text-center"><strong>The Master (2012)</strong></h2>
+                        <h5 class="card-text text-center"><strong>Dir. Paul Thomas Anderson</strong></h5>
+                        <p class="card-text text-center">
+                            <a href="https://www.imdb.com/title/tt1560747/" target="_blank" rel="noreferrer">
+                                <strong class="text-decoration-underline">IMDb 7.2</strong>
+                            </a>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!---->
         <hr>
-        <div class="grid-container">
+        <section class="grid-container">
             <div class="grid-item"></div>
             <div class="grid-item center">
-                <div class="video">
-                    <iframe width="100%" src="https://www.youtube.com/embed/-EGSWpBDbho"
-                        title="YouTube video player" frameborder="0"
+                <div class="ratio ratio-16x9">
+                    <iframe width="100%" src="https://www.youtube.com/embed/-EGSWpBDbho" title="YouTube video player"
+                        frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen>
                     </iframe>
                 </div>
+                <!---->
                 <hr>
                 <div>
                     <img src="../img/tm_prev.jpg" alt="The Master" width="100%">
                 </div>
                 <hr>
-                <div class="text-center prologo">
-                    <strong>ABOUT THE FILM:</strong>
+                <div class="prologo lead">
+                    <div class="text-center">
+                        <strong>ABOUT THE FILM:</strong>
+                    </div>
                     <p>
                         <em>
-                            Freddie Quell (Joaquin Phoenix) is a troubled, boozy drifter struggling with the trauma
+                            <span class="sangria"></span>Freddie Quell (Joaquin Phoenix) is a troubled, boozy drifter
+                            struggling with the trauma
                             of
                             World War II and whatever inner demons ruled his life before that. On a fateful night in
                             1950, Freddie boards a passing boat and meets Lancaster Dodd (Philip Seymour Hoffman),
@@ -279,19 +621,178 @@
                 </div>
                 <hr>
                 <div class="boton">
-                    <button type="send" class="btn btn-secondary me-3">
-                        <a href="https://yts.mx/torrent/download/633A43681D60A4E6B11408CD34C4A9C5BF8BD570"
-                            target="_blank" rel="noopener noreferrer"><strong>Download</strong></a>
-                    </button>
-                    <button type="button" class="btn btn-secondary">
-                        <a href="https://yifysubtitles.org/subtitle/the-master-2012-spanish-yify-82105.zip"
-                            target="_blank" rel="noopener noreferrer"><strong>Subtitles</strong></a>
-                    </button>
+                    <div class="btn-group me-2" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-secondary me-3"><a
+                                href="https://yts.mx/torrent/download/633A43681D60A4E6B11408CD34C4A9C5BF8BD570"
+                                target="_blank" rel="noopener noreferrer"><strong>Download</strong></a></button>
+                        <button type="button" class="btn btn-secondary me-3"><a
+                                href="https://yifysubtitles.org/subtitle/the-master-2012-spanish-yify-82105.zip"
+                                target="_blank" rel="noopener noreferrer"><strong>Subtitles</strong></a></button>
+                        <button type="button" class="btn btn-success me-3"><a href="../pdf/tm.pdf" target="_blank"
+                                rel="noopener noreferrer"><strong>Screenplay</strong></a>
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="grid-item"></div>
-        </div>
+            <div class="grid-item"></div>
+        </section>
+        <hr>
+        <!---->
+        <section class="comentarios">
+            <form class="form-floating container">
+                <textarea class="form-control" placeholder="leave a comment here" id="coment"
+                    style="height: 125px"></textarea>
+                <label for="coment" required>
+                    <em class="text-dark">Comments</em>
+                </label>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"><strong>Send</strong></button>
+                </div>
+            </form>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content bg-dark">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">USER #*****</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        </form>
+                        <div class="modal-body">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="email" placeholder="Email Address"
+                                    required>
+                                <label class="text-dark" for="email" required>Email Address *</label>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Send</button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+        </section>
+        <!---->
+        <section class="box-comentarios">
+            <div class="card text-white bg-dark mb-1 me-3" style="max-width: 1fr;">
+                <div class="card-body">
+                    <h5 class="card-title">User #12345</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content...</p>
+                    <button type="button" class="btn btn-outline-light"><strong>Read More</strong></button>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card text-white bg-dark mb-1 me-3" style="max-width: 1fr;">
+                <div class="card-body">
+                    <h5 class="card-title">User #12345</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content...</p>
+                    <button type="button" class="btn btn-outline-light"><strong>Read More</strong></button>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 days ago</small>
+                </div>
+            </div>
+            <div class="card text-white bg-dark mb-1 me-3" style="max-width: 1fr;">
+                <div class="card-body">
+                    <h5 class="card-title">User #12345</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content...</p>
+                    <button type="button" class="btn btn-outline-light"><strong>Read More</strong></button>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 30 days ago</small>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!---->
+        <section class="targetas">
+            <div class="text-center">
+                <strong class="lead"><em><strong>RELATED POSTS:</strong></em></strong>
+            </div>
+            <hr>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 bg-dark">
+                        <a href="../pag/twbb.html">
+                            <img src="../img/i2.jpg" class="card-img-top" alt="There Will Be Blood">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">There Will Be Blood</h5>
+                            <p class="card-text">Dir. Paul Thomas Anderson</p>
+                            <p><em>Ruthless silver miner, turned oil prospector, Daniel Plainview moves
+                                    to oil-rich California. Using his adopted son HW to project a trustworthy,
+                                    family-man
+                                    image, Plainview cons local landowners into selling him their valuable properties
+                                    for a
+                                    pittance. However, local preacher Eli Sunday suspects Plainviews motives and
+                                    intentions,
+                                    starting a slow-burning feud that threatens both their lives.
+                                </em>
+                            </p>
+                        </div>
+                        <!-- <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 bg-dark">
+                        <a href="../pag/ncfom.html">
+                            <img src="../img/i1.jpg" class="card-img-top" alt="No Country For Old Man">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">No Country For Old Man</h5>
+                            <p class="card-text">Dir. Joe Coen & Ethan Coen</p>
+                            <p><em>While out hunting, Llewelyn Moss (Josh Brolin) finds the grisly aftermath of a drug
+                                    deal. Though he knows better, he cannot resist the cash left behind and takes it
+                                    with
+                                    him. The hunter becomes the hunted when a merciless killer named Chigurh (Javier
+                                    Bardem)
+                                    picks up his trail. Also looking for Moss is Sheriff Bell (Tommy Lee Jones), an
+                                    aging
+                                    lawman who reflects on a changing world and a dark secret of his own, as he tries to
+                                    find and protect Moss.
+                                </em>
+                            </p>
+                        </div>
+                        <!-- <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 bg-dark">
+                        <a href="../pag/tl.html">
+                            <img src="../img/i6.jpg" class="card-img-top" alt="The Lighthouse">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">The Lighthouse</h5>
+                            <p class="card-text">Dir. Robert Eggers</p>
+                            <p><em>A remote and mysterious New England island in the 1890s. Veteran lighthouse keeper
+                                    Thomas Wake (Willem Dafoe) and his young assistant Ephraim Winslow (Robert
+                                    Pattinson) must live together for four weeks. Their objective will be to keep the
+                                    lighthouse in good condition until the relay arrives that allows them to return to
+                                    land. But things will get complicated when conflicts arise over power hierarchies
+                                    between the two.
+                                </em>
+                            </p>
+                        </div>
+                        <!-- <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
         <hr>
     </main>
     <!--MAIN END-->
@@ -302,8 +803,12 @@
         </div>
         <div class="row g-1">
             <div class="col-auto">
-                <button type="button" class="btn btn-primary mb-3" data-bs-toggle="offcanvas"
+                <button id="boton-sub" type="button" class="btn btn-dark mb-3" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasSubscribe" aria-controls="offcanvasSubscribe">
+                    <span class="span1"></span>
+                    <span class="span2"></span>
+                    <span class="span3"></span>
+                    <span class="span4"></span>
                     <strong><em>SUBSCRIBE</em></strong>
                 </button>
                 <!-- offcanvas -->
@@ -316,19 +821,20 @@
                     </div>
                     <div class="offcanvas-body">
                         <form>
-                            <div class="labels__offcanvas">
-                                <label for="name"><strong><em class="text-dark">Nickname:</em></strong></label>
-                                <input type="text" class="form-control" id="name" placeholder="Name (Optional)">
-                                <label for="email"><strong><em class="text-dark">Email:</em></strong></label>
-                                <input type="text" class="form-control" id="email" placeholder="Email Address" required>
+                            <div class="form-floating mb-2">
+                                <input type="name" class="form-control" id="name" placeholder="Name (Optional)">
+                                <label class="text-dark" for="name">Name (Optional)</label>
                             </div>
-                            <br>
+                            <div class="form-floating mb-2">
+                                <input type="email" class="form-control" id="email" placeholder="Email Address"
+                                    required>
+                                <label class="text-dark" for="email">Email Address *</label>
+                            </div>
                             <div>
                                 <button type="button" class="btn btn-secondary"
                                     data-bs-dismiss="offcanvas">Close</button>
                                 <button type="submit" class="btn btn-primary">Sign Up</button>
                             </div>
-                            <hr class="text-dark">
                         </form>
                         <hr class="text-dark">
                         <p class="text-dark">Hi there! Thank you for being part of this community.</p>
@@ -344,7 +850,7 @@
         <div class="row">
             <p>We respect your privacy.</p>
         </div>
-        <div class="row" id="social">
+        <div class="row">
             <ul class="col d-flex">
                 <li class="footer__social--redes">
                     <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">

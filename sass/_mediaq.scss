@@ -12,6 +12,14 @@
     .grid__galeria {
         grid-template-columns: 1fr;
     }
+    .carrusel {
+        height: 500px;
+    }
+    @each $carrusel in c1, c2, c3 {
+        .carrusel__img--#{$carrusel} {
+            height: 500px;
+        }
+    }
 }
 
 //
@@ -19,6 +27,14 @@
 @media only screen and (min-width: 576px) {
     .grid__galeria {
         grid-template-columns: 1fr 1fr;
+    }
+    .carrusel {
+        height: 525px;
+    }
+    @each $carrusel in c1, c2, c3 {
+        .carrusel__img--#{$carrusel} {
+            height: 525px;
+        }
     }
 }
 
@@ -28,6 +44,14 @@
     .grid__galeria {
         grid-template-columns: 1fr 1fr 1fr;
     }
+    .carrusel {
+        height: 550px;
+    }
+    @each $carrusel in c1, c2, c3 {
+        .carrusel__img--#{$carrusel} {
+            height: 550px;
+        }
+    }
 }
 
 //
@@ -35,6 +59,14 @@
 @media only screen and (min-width: 992px) {
     .grid__galeria {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .carrusel {
+        height: 550px;
+    }
+    @each $carrusel in c1, c2, c3 {
+        .carrusel__img--#{$carrusel} {
+            height: 550px;
+        }
     }
 }
 
@@ -44,6 +76,14 @@
     .grid__galeria {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+    .carrusel {
+        height: 600px;
+    }
+    @each $carrusel in c1, c2, c3 {
+        .carrusel__img--#{$carrusel} {
+            height: 600px;
+        }
+    }
 }
 
 //
@@ -52,6 +92,12 @@
     .grid__galeria {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+    .carrusel {
+        height: 600px;
+    }
+    @each $carrusel in c1, c2, c3 {
+        .carrusel__img--#{$carrusel} {
+            height: 600px;
+        }
+    }
 }
-
-// 

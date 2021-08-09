@@ -2,36 +2,26 @@
 
 .carrusel {
     width: 100%;
-    height: 0vh;
-
     @each $carrusel in c1, c2, c3 {
-        .carrusel__img--#{$carrusel} { 
-              background-image: url("../img/#{$carrusel}.jpg");
-              @include sizeCarrusel();
-         }
-     }
+        .carrusel__img--#{$carrusel} {
+            background-image: url("../img/#{$carrusel}.jpg");
+            @include bgCarrusel();
+        }
+    }
 }
 
 //
 
 .grid {
-    margin-top: 500px;
     height: 100%;
-
     .grid__galeria {
         display: grid;
-        
         @each $galeriaGrid in i1, i2, i3, i4, i5, i6, i7, i8 {
             .grid__img--#{$galeriaGrid} {
-            background-image: url("../img/#{$galeriaGrid}.jpg");
-            @include sizeGaleria();
+                background-image: url("../img/#{$galeriaGrid}.jpg");
+                @include sizeGaleria();
+                @include capaDescripcion();
             }
-        }
-     
-        .grid__img:hover {
-            // transform: scale(1.05);
-            transition: 0.9s;
-            filter: grayscale(100%);
         }
     }
 }
