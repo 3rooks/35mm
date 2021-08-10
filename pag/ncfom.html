@@ -119,7 +119,7 @@
         }
 
         .prologo {
-            padding: 0 2rem;
+            padding: 1rem 2rem 1px 2rem;
         }
 
         .boton {
@@ -600,7 +600,7 @@
                     <img src="../img/ncfom_prev.jpg" alt="No Country For Old Man" width="100%">
                 </div>
                 <hr>
-                <div class="prologo lead">
+                <div class="prologo bg-dark">
                     <div class="text-center"><strong>ABOUT THE FILM:</strong></div>
                     <p>
                         <em>
@@ -616,14 +616,14 @@
                 </div>
                 <hr>
                 <div class="boton">
-                    <div class="btn-group me-2" role="group" aria-label="First group">
-                        <button type="button" class="btn btn-secondary me-3"><a
+                    <div class="btn-group" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-secondary me-2"><a
                                 href="http://www.yts.ge/torrent/download/No%20Country%20for%20Old%20Men%20(2007)%20%5b1080p%5d%20%5bBluRay%5d%20%5bYTS.MX%5d.torrent"
                                 target="_blank" rel="noopener noreferrer"><strong>Download</strong></a></button>
-                        <button type="button" class="btn btn-secondary me-3"><a
+                        <button type="button" class="btn btn-secondary me-2"><a
                                 href="https://yifysubtitles.org/subtitle/no-country-for-old-men-2007-spanish-yify-101558.zip"
                                 target="_blank" rel="noopener noreferrer"><strong>Subtitles</strong></a></button>
-                        <button type="button" class="btn btn-success me-3"><a href="../pdf/ncfom.pdf" target="_blank"
+                        <button type="button" class="btn btn-success"><a href="../pdf/ncfom.pdf" target="_blank"
                                 rel="noopener noreferrer"><strong>Screenplay</strong></a>
                         </button>
                     </div>
@@ -632,45 +632,6 @@
             <div class="grid-item"></div>
         </section>
         <hr>
-        <!---->
-        <section class="comentarios">
-            <form class="form-floating container">
-                <textarea class="form-control" placeholder="leave a comment here" id="coment"
-                    style="height: 125px"></textarea>
-                <label for="coment" required>
-                    <em class="text-dark">Comments</em>
-                </label>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop"><strong>Send</strong></button>
-                </div>
-            </form>
-            <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content bg-dark">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel">USER #*****</h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        </form>
-                        <div class="modal-body">
-                            <div class="form-floating">
-                                <input type="email" class="form-control" id="email" placeholder="Email Address"
-                                    required>
-                                <label class="text-dark" for="email" required>Email Address *</label>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Send</button>
-                        </div>
-                        </form>
-                    </div>
-                </div>
-        </section>
         <!---->
         <section class="box-comentarios">
             <div class="card text-white bg-dark mb-1 me-3" style="max-width: 1fr;">
@@ -706,6 +667,46 @@
                     <small class="text-muted">Last updated 30 days ago</small>
                 </div>
             </div>
+        </section>
+        <br>
+        <!---->
+        <section class="comentarios">
+            <form class="form-floating container">
+                <textarea class="form-control bg-dark text-white" placeholder="leave a comment here" id="coment"
+                    style="height: 125px"></textarea>
+                <label for="coment" required>
+                    <em class="text-white">Comments</em>
+                </label>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"><strong>Send</strong></button>
+                </div>
+            </form>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content bg-dark">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">USER #*****</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        </form>
+                        <div class="modal-body">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="email" placeholder="Email Address"
+                                    required>
+                                <label class="text-dark" for="email" required>Email Address *</label>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Send</button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
         </section>
         <hr>
         <!---->
