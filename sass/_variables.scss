@@ -52,36 +52,35 @@ $gradient: linear-gradient(
         rgba(20, 24, 29, 0.01642493) 56.87777778%,
         rgba(20, 24, 29, 0) 58.51851852%
     );
-$imgPortada: "https://archive.org/download/the_master/the_master.png";
+$imgPortada: "../img/tm-1.png";
 $bgPortada: $gradient, url($imgPortada);
 //
 $galeriaGrid: (
-    img--1: "https://ia801504.us.archive.org/13/items/the-return_202108/no%20country%20for%20old%20man.jpg",
-    img--2: "https://ia801504.us.archive.org/13/items/the-return_202108/there%20will%20be%20blood.jpg",
-    img--3: "https://ia801504.us.archive.org/13/items/the-return_202108/inglorious%20basterds.jpg",
-    img--4: "https://ia601504.us.archive.org/13/items/the-return_202108/the%20handmaiden.jpg",
-    img--5: "https://ia601504.us.archive.org/13/items/the-return_202108/the%20return.jpg",
-    img--6: "https://ia601504.us.archive.org/13/items/the-return_202108/the%20lighthouse.jpg",
-    img--7: "https://ia801504.us.archive.org/13/items/the-return_202108/hereditary.jpg",
-    img--8: "https://ia801504.us.archive.org/13/items/the-return_202108/climax.jpg",
+    img--1: "../img/ncfom.jpg",
+    img--2: "../img/twbb-0.jpg",
+    img--3: "../img/ib.jpg",
+    img--4: "../img/th.jpg",
+    img--5: "../img/tr.jpg",
+    img--6: "../img/tl.jpg",
+    img--7: "../img/h.jpg",
+    img--8: "../img/c.jpg",
 );
-// 
-$carrusel :(
-    img--1: "https://archive.org/download/the_master/the_master.png",
-    img--2: "https://ia801404.us.archive.org/15/items/there-will-be-blood_20210821/there-will-be-blood.jpg",
-    img--3: "https://ia801404.us.archive.org/15/items/there-will-be-blood_20210821/inherentvice.jpg",
+//
+$carrusel: (
+    img--1: "../img/tm-1.png",
+    img--2: "../img/twbb-1.jpg",
+    img--3: "../img/iv-1.jpg",
 );
 //
 $galeriaHoverUno: (
-    img--1: "https://ia801508.us.archive.org/30/items/poster-20/poster%20%289%29.jpg",
-    img--2: "https://ia601508.us.archive.org/30/items/poster-20/poster%20%2810%29.jpg",
-    img--3: "https://ia801508.us.archive.org/30/items/poster-20/poster%20%2819%29.jpg",
-    img--4: "https://ia801508.us.archive.org/30/items/poster-20/poster%20%2820%29.jpg",
+    img--1: "../img/poster-1.jpg",
+    img--2: "../img/poster-2.jpg",
+    img--3: "../img/poster-3.jpg",
+    img--4: "../img/poster-4.jpg",
 );
 $galeriaHoverDos: (
-    img--1: "https://ia601509.us.archive.org/35/items/poster-3/poster%20%283%29.jpg",
-    img--2: "https://ia801508.us.archive.org/30/items/poster-20/poster%20%2814%29.jpg",
-    img--3: "https://ia801508.us.archive.org/30/items/poster-20/poster%20%2815%29.jpg",
-    img--4: "https://ia801508.us.archive.org/30/items/poster-20/poster%20%2816%29.jpg",
+    img--1: "../img/poster-5.jpg",
+    img--2: "../img/poster-6.jpg",
+    img--3: "../img/poster-7.jpg",
+    img--4: "../img/poster-8.jpg",
 );
-//

@@ -18,33 +18,33 @@
   background: #14181c;
 }
 
-header h1 {
+.master header #navbarNav {
+  background: #14181c !important;
+}
+
+.master header #navbarNav h1 {
   font-family: "Palette Mosaic", cursive;
   padding-left: 2rem;
 }
 
-header #navbarNav {
-  background: #14181c !important;
-}
-
-header #navbarNav .dropdown-menu {
+.master header #navbarNav .dropdown-menu {
   background: #14181c;
 }
 
-header #navbarNav .dropdown-menu a {
+.master header #navbarNav .dropdown-menu a {
   text-align: center;
   padding: 10px 0;
 }
 
-header #navbarNav .dropdown-menu a span {
+.master header #navbarNav .dropdown-menu a span {
   padding: 0 10px;
 }
 
-header #navbarNav .dropdown-menu a:hover {
+.master header #navbarNav .dropdown-menu a:hover {
   background: #14181c !important;
 }
 
-main #main {
+.master main #main {
   display: table;
   width: 100%;
   height: 80vh;
@@ -52,18 +52,18 @@ main #main {
   color: white;
 }
 
-main #main .fof {
+.master main #main .fof {
   display: table-cell;
   vertical-align: middle;
   font-family: "Shadows Into Light", cursive;
 }
 
-main #main .fof h1 {
+.master main #main .fof h1 {
   letter-spacing: 5px;
   font-size: 7rem;
 }
 
-main #main .fof h2 {
+.master main #main .fof h2 {
   font-size: 50px;
   letter-spacing: 5px;
   display: inline-block;
@@ -72,7 +72,7 @@ main #main .fof h2 {
           animation: type 0.5s alternate infinite;
 }
 
-main #main .fof h3 {
+.master main #main .fof h3 {
   letter-spacing: 5px;
   font-size: 3rem;
 }

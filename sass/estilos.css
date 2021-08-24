@@ -18,13 +18,13 @@
   background: #14181c;
 }
 
-header h1 {
-  font-family: "Palette Mosaic", cursive;
-  padding-left: 2rem;
-}
-
 header #navbarNav {
   background: #14181c !important;
+}
+
+header #navbarNav h1 {
+  font-family: "Palette Mosaic", cursive;
+  padding-left: 2rem;
 }
 
 header #navbarNav .dropdown-menu {
@@ -45,8 +45,8 @@ header #navbarNav .dropdown-menu a:hover {
 }
 
 header .portada {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #14181d), color-stop(0.97%, rgba(20, 24, 29, 0.985565)), color-stop(2.07833%, rgba(20, 24, 29, 0.945131)), color-stop(3.29667%, rgba(20, 24, 29, 0.883007)), color-stop(4.60167%, rgba(20, 24, 29, 0.803499)), color-stop(5.96667%, rgba(20, 24, 29, 0.710915)), color-stop(7.365%, rgba(20, 24, 29, 0.609563)), color-stop(8.77167%, rgba(20, 24, 29, 0.50375)), color-stop(10.16%, rgba(20, 24, 29, 0.397784)), color-stop(11.505%, rgba(20, 24, 29, 0.295973)), color-stop(12.78%, rgba(20, 24, 29, 0.202624)), color-stop(13.95833%, rgba(20, 24, 29, 0.122044)), color-stop(15.01667%, rgba(20, 24, 29, 0.0585423)), color-stop(15.92833%, rgba(20, 24, 29, 0.0164249)), color-stop(16.66667%, rgba(20, 24, 29, 0)), color-stop(83.33333%, rgba(20, 24, 29, 0)), color-stop(84.07167%, rgba(20, 24, 29, 0.0164249)), color-stop(84.98333%, rgba(20, 24, 29, 0.0585423)), color-stop(86.04167%, rgba(20, 24, 29, 0.122044)), color-stop(87.22%, rgba(20, 24, 29, 0.202624)), color-stop(88.495%, rgba(20, 24, 29, 0.295973)), color-stop(89.84%, rgba(20, 24, 29, 0.397784)), color-stop(91.22833%, rgba(20, 24, 29, 0.50375)), color-stop(92.635%, rgba(20, 24, 29, 0.609563)), color-stop(94.03333%, rgba(20, 24, 29, 0.710915)), color-stop(95.39833%, rgba(20, 24, 29, 0.803499)), color-stop(96.70333%, rgba(20, 24, 29, 0.883007)), color-stop(97.92167%, rgba(20, 24, 29, 0.945131)), color-stop(99.03%, rgba(20, 24, 29, 0.985565)), to(#14181d)), -webkit-gradient(linear, left bottom, left top, color-stop(0, #14181d), color-stop(21.48148%, #14181d), color-stop(23.63704%, rgba(20, 24, 29, 0.985565)), color-stop(26.1%, rgba(20, 24, 29, 0.945131)), color-stop(28.80741%, rgba(20, 24, 29, 0.883007)), color-stop(31.70741%, rgba(20, 24, 29, 0.803499)), color-stop(34.74074%, rgba(20, 24, 29, 0.710915)), color-stop(37.84815%, rgba(20, 24, 29, 0.609563)), color-stop(40.97407%, rgba(20, 24, 29, 0.50375)), color-stop(44.05926%, rgba(20, 24, 29, 0.397784)), color-stop(47.04815%, rgba(20, 24, 29, 0.295973)), color-stop(49.88148%, rgba(20, 24, 29, 0.202624)), color-stop(52.5%, rgba(20, 24, 29, 0.122044)), color-stop(54.85185%, rgba(20, 24, 29, 0.0585423)), color-stop(56.87778%, rgba(20, 24, 29, 0.0164249)), color-stop(58.51852%, rgba(20, 24, 29, 0))), url("https://archive.org/download/the_master/the_master.png");
-  background-image: linear-gradient(90deg, #14181d 0, rgba(20, 24, 29, 0.985565) 0.97%, rgba(20, 24, 29, 0.945131) 2.07833%, rgba(20, 24, 29, 0.883007) 3.29667%, rgba(20, 24, 29, 0.803499) 4.60167%, rgba(20, 24, 29, 0.710915) 5.96667%, rgba(20, 24, 29, 0.609563) 7.365%, rgba(20, 24, 29, 0.50375) 8.77167%, rgba(20, 24, 29, 0.397784) 10.16%, rgba(20, 24, 29, 0.295973) 11.505%, rgba(20, 24, 29, 0.202624) 12.78%, rgba(20, 24, 29, 0.122044) 13.95833%, rgba(20, 24, 29, 0.0585423) 15.01667%, rgba(20, 24, 29, 0.0164249) 15.92833%, rgba(20, 24, 29, 0) 16.66667%, rgba(20, 24, 29, 0) 83.33333%, rgba(20, 24, 29, 0.0164249) 84.07167%, rgba(20, 24, 29, 0.0585423) 84.98333%, rgba(20, 24, 29, 0.122044) 86.04167%, rgba(20, 24, 29, 0.202624) 87.22%, rgba(20, 24, 29, 0.295973) 88.495%, rgba(20, 24, 29, 0.397784) 89.84%, rgba(20, 24, 29, 0.50375) 91.22833%, rgba(20, 24, 29, 0.609563) 92.635%, rgba(20, 24, 29, 0.710915) 94.03333%, rgba(20, 24, 29, 0.803499) 95.39833%, rgba(20, 24, 29, 0.883007) 96.70333%, rgba(20, 24, 29, 0.945131) 97.92167%, rgba(20, 24, 29, 0.985565) 99.03%, #14181d), linear-gradient(0deg, #14181d 0, #14181d 21.48148%, rgba(20, 24, 29, 0.985565) 23.63704%, rgba(20, 24, 29, 0.945131) 26.1%, rgba(20, 24, 29, 0.883007) 28.80741%, rgba(20, 24, 29, 0.803499) 31.70741%, rgba(20, 24, 29, 0.710915) 34.74074%, rgba(20, 24, 29, 0.609563) 37.84815%, rgba(20, 24, 29, 0.50375) 40.97407%, rgba(20, 24, 29, 0.397784) 44.05926%, rgba(20, 24, 29, 0.295973) 47.04815%, rgba(20, 24, 29, 0.202624) 49.88148%, rgba(20, 24, 29, 0.122044) 52.5%, rgba(20, 24, 29, 0.0585423) 54.85185%, rgba(20, 24, 29, 0.0164249) 56.87778%, rgba(20, 24, 29, 0) 58.51852%), url("https://archive.org/download/the_master/the_master.png");
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #14181d), color-stop(0.97%, rgba(20, 24, 29, 0.985565)), color-stop(2.07833%, rgba(20, 24, 29, 0.945131)), color-stop(3.29667%, rgba(20, 24, 29, 0.883007)), color-stop(4.60167%, rgba(20, 24, 29, 0.803499)), color-stop(5.96667%, rgba(20, 24, 29, 0.710915)), color-stop(7.365%, rgba(20, 24, 29, 0.609563)), color-stop(8.77167%, rgba(20, 24, 29, 0.50375)), color-stop(10.16%, rgba(20, 24, 29, 0.397784)), color-stop(11.505%, rgba(20, 24, 29, 0.295973)), color-stop(12.78%, rgba(20, 24, 29, 0.202624)), color-stop(13.95833%, rgba(20, 24, 29, 0.122044)), color-stop(15.01667%, rgba(20, 24, 29, 0.0585423)), color-stop(15.92833%, rgba(20, 24, 29, 0.0164249)), color-stop(16.66667%, rgba(20, 24, 29, 0)), color-stop(83.33333%, rgba(20, 24, 29, 0)), color-stop(84.07167%, rgba(20, 24, 29, 0.0164249)), color-stop(84.98333%, rgba(20, 24, 29, 0.0585423)), color-stop(86.04167%, rgba(20, 24, 29, 0.122044)), color-stop(87.22%, rgba(20, 24, 29, 0.202624)), color-stop(88.495%, rgba(20, 24, 29, 0.295973)), color-stop(89.84%, rgba(20, 24, 29, 0.397784)), color-stop(91.22833%, rgba(20, 24, 29, 0.50375)), color-stop(92.635%, rgba(20, 24, 29, 0.609563)), color-stop(94.03333%, rgba(20, 24, 29, 0.710915)), color-stop(95.39833%, rgba(20, 24, 29, 0.803499)), color-stop(96.70333%, rgba(20, 24, 29, 0.883007)), color-stop(97.92167%, rgba(20, 24, 29, 0.945131)), color-stop(99.03%, rgba(20, 24, 29, 0.985565)), to(#14181d)), -webkit-gradient(linear, left bottom, left top, color-stop(0, #14181d), color-stop(21.48148%, #14181d), color-stop(23.63704%, rgba(20, 24, 29, 0.985565)), color-stop(26.1%, rgba(20, 24, 29, 0.945131)), color-stop(28.80741%, rgba(20, 24, 29, 0.883007)), color-stop(31.70741%, rgba(20, 24, 29, 0.803499)), color-stop(34.74074%, rgba(20, 24, 29, 0.710915)), color-stop(37.84815%, rgba(20, 24, 29, 0.609563)), color-stop(40.97407%, rgba(20, 24, 29, 0.50375)), color-stop(44.05926%, rgba(20, 24, 29, 0.397784)), color-stop(47.04815%, rgba(20, 24, 29, 0.295973)), color-stop(49.88148%, rgba(20, 24, 29, 0.202624)), color-stop(52.5%, rgba(20, 24, 29, 0.122044)), color-stop(54.85185%, rgba(20, 24, 29, 0.0585423)), color-stop(56.87778%, rgba(20, 24, 29, 0.0164249)), color-stop(58.51852%, rgba(20, 24, 29, 0))), url("../img/tm-1.png");
+  background-image: linear-gradient(90deg, #14181d 0, rgba(20, 24, 29, 0.985565) 0.97%, rgba(20, 24, 29, 0.945131) 2.07833%, rgba(20, 24, 29, 0.883007) 3.29667%, rgba(20, 24, 29, 0.803499) 4.60167%, rgba(20, 24, 29, 0.710915) 5.96667%, rgba(20, 24, 29, 0.609563) 7.365%, rgba(20, 24, 29, 0.50375) 8.77167%, rgba(20, 24, 29, 0.397784) 10.16%, rgba(20, 24, 29, 0.295973) 11.505%, rgba(20, 24, 29, 0.202624) 12.78%, rgba(20, 24, 29, 0.122044) 13.95833%, rgba(20, 24, 29, 0.0585423) 15.01667%, rgba(20, 24, 29, 0.0164249) 15.92833%, rgba(20, 24, 29, 0) 16.66667%, rgba(20, 24, 29, 0) 83.33333%, rgba(20, 24, 29, 0.0164249) 84.07167%, rgba(20, 24, 29, 0.0585423) 84.98333%, rgba(20, 24, 29, 0.122044) 86.04167%, rgba(20, 24, 29, 0.202624) 87.22%, rgba(20, 24, 29, 0.295973) 88.495%, rgba(20, 24, 29, 0.397784) 89.84%, rgba(20, 24, 29, 0.50375) 91.22833%, rgba(20, 24, 29, 0.609563) 92.635%, rgba(20, 24, 29, 0.710915) 94.03333%, rgba(20, 24, 29, 0.803499) 95.39833%, rgba(20, 24, 29, 0.883007) 96.70333%, rgba(20, 24, 29, 0.945131) 97.92167%, rgba(20, 24, 29, 0.985565) 99.03%, #14181d), linear-gradient(0deg, #14181d 0, #14181d 21.48148%, rgba(20, 24, 29, 0.985565) 23.63704%, rgba(20, 24, 29, 0.945131) 26.1%, rgba(20, 24, 29, 0.883007) 28.80741%, rgba(20, 24, 29, 0.803499) 31.70741%, rgba(20, 24, 29, 0.710915) 34.74074%, rgba(20, 24, 29, 0.609563) 37.84815%, rgba(20, 24, 29, 0.50375) 40.97407%, rgba(20, 24, 29, 0.397784) 44.05926%, rgba(20, 24, 29, 0.295973) 47.04815%, rgba(20, 24, 29, 0.202624) 49.88148%, rgba(20, 24, 29, 0.122044) 52.5%, rgba(20, 24, 29, 0.0585423) 54.85185%, rgba(20, 24, 29, 0.0164249) 56.87778%, rgba(20, 24, 29, 0) 58.51852%), url("../img/tm-1.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -201,7 +201,7 @@ main .galeria__grid {
 }
 
 main .galeria__grid .grid__img--1 {
-  background-image: url("https://ia801504.us.archive.org/13/items/the-return_202108/no%20country%20for%20old%20man.jpg");
+  background-image: url("../img/ncfom.jpg");
   height: 600px;
   width: 1fr;
   border: 1px solid white;
@@ -258,7 +258,7 @@ main .galeria__grid .grid__img--1:hover .grid__img--descripcion {
 }
 
 main .galeria__grid .grid__img--2 {
-  background-image: url("https://ia801504.us.archive.org/13/items/the-return_202108/there%20will%20be%20blood.jpg");
+  background-image: url("../img/twbb-0.jpg");
   height: 600px;
   width: 1fr;
   border: 1px solid white;
@@ -315,7 +315,7 @@ main .galeria__grid .grid__img--2:hover .grid__img--descripcion {
 }
 
 main .galeria__grid .grid__img--3 {
-  background-image: url("https://ia801504.us.archive.org/13/items/the-return_202108/inglorious%20basterds.jpg");
+  background-image: url("../img/ib.jpg");
   height: 600px;
   width: 1fr;
   border: 1px solid white;
@@ -372,7 +372,7 @@ main .galeria__grid .grid__img--3:hover .grid__img--descripcion {
 }
 
 main .galeria__grid .grid__img--4 {
-  background-image: url("https://ia601504.us.archive.org/13/items/the-return_202108/the%20handmaiden.jpg");
+  background-image: url("../img/th.jpg");
   height: 600px;
   width: 1fr;
   border: 1px solid white;
@@ -429,7 +429,7 @@ main .galeria__grid .grid__img--4:hover .grid__img--descripcion {
 }
 
 main .galeria__grid .grid__img--5 {
-  background-image: url("https://ia601504.us.archive.org/13/items/the-return_202108/the%20return.jpg");
+  background-image: url("../img/tr.jpg");
   height: 600px;
   width: 1fr;
   border: 1px solid white;
@@ -486,7 +486,7 @@ main .galeria__grid .grid__img--5:hover .grid__img--descripcion {
 }
 
 main .galeria__grid .grid__img--6 {
-  background-image: url("https://ia601504.us.archive.org/13/items/the-return_202108/the%20lighthouse.jpg");
+  background-image: url("../img/tl.jpg");
   height: 600px;
   width: 1fr;
   border: 1px solid white;
@@ -543,7 +543,7 @@ main .galeria__grid .grid__img--6:hover .grid__img--descripcion {
 }
 
 main .galeria__grid .grid__img--7 {
-  background-image: url("https://ia801504.us.archive.org/13/items/the-return_202108/hereditary.jpg");
+  background-image: url("../img/h.jpg");
   height: 600px;
   width: 1fr;
   border: 1px solid white;
@@ -600,7 +600,7 @@ main .galeria__grid .grid__img--7:hover .grid__img--descripcion {
 }
 
 main .galeria__grid .grid__img--8 {
-  background-image: url("https://ia801504.us.archive.org/13/items/the-return_202108/climax.jpg");
+  background-image: url("../img/c.jpg");
   height: 600px;
   width: 1fr;
   border: 1px solid white;
@@ -680,7 +680,7 @@ main .carrusel__comentarios .carrusel .carrusel__img {
 }
 
 main .carrusel__comentarios .carrusel .carrusel__img .carrusel__img--1 {
-  background-image: url("https://archive.org/download/the_master/the_master.png");
+  background-image: url("../img/tm-1.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -688,7 +688,7 @@ main .carrusel__comentarios .carrusel .carrusel__img .carrusel__img--1 {
 }
 
 main .carrusel__comentarios .carrusel .carrusel__img .carrusel__img--2 {
-  background-image: url("https://ia801404.us.archive.org/15/items/there-will-be-blood_20210821/there-will-be-blood.jpg");
+  background-image: url("../img/twbb-1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -696,7 +696,7 @@ main .carrusel__comentarios .carrusel .carrusel__img .carrusel__img--2 {
 }
 
 main .carrusel__comentarios .carrusel .carrusel__img .carrusel__img--3 {
-  background-image: url("https://ia801404.us.archive.org/15/items/there-will-be-blood_20210821/inherentvice.jpg");
+  background-image: url("../img/iv-1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -746,7 +746,7 @@ main .galeria__hover .galeria__hover--1 .hover__img:hover {
 }
 
 main .galeria__hover .galeria__hover--1 .hover__img .hover__img--1 {
-  background-image: url("https://ia801508.us.archive.org/30/items/poster-20/poster%20%289%29.jpg");
+  background-image: url("../img/poster-1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -761,7 +761,7 @@ main .galeria__hover .galeria__hover--1 .hover__img .hover__img--1:hover {
 }
 
 main .galeria__hover .galeria__hover--1 .hover__img .hover__img--2 {
-  background-image: url("https://ia601508.us.archive.org/30/items/poster-20/poster%20%2810%29.jpg");
+  background-image: url("../img/poster-2.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -776,7 +776,7 @@ main .galeria__hover .galeria__hover--1 .hover__img .hover__img--2:hover {
 }
 
 main .galeria__hover .galeria__hover--1 .hover__img .hover__img--3 {
-  background-image: url("https://ia801508.us.archive.org/30/items/poster-20/poster%20%2819%29.jpg");
+  background-image: url("../img/poster-3.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -791,7 +791,7 @@ main .galeria__hover .galeria__hover--1 .hover__img .hover__img--3:hover {
 }
 
 main .galeria__hover .galeria__hover--1 .hover__img .hover__img--4 {
-  background-image: url("https://ia801508.us.archive.org/30/items/poster-20/poster%20%2820%29.jpg");
+  background-image: url("../img/poster-4.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -811,7 +811,6 @@ main .galeria__hover .galeria__hover--2 {
   display: flex;
   width: 100%;
   height: 60vh;
-  padding: 1rem 0 0 0;
 }
 
 main .galeria__hover .galeria__hover--2 .hover__img {
@@ -831,7 +830,7 @@ main .galeria__hover .galeria__hover--2 .hover__img:hover {
 }
 
 main .galeria__hover .galeria__hover--2 .hover__img .hover__img--1 {
-  background-image: url("https://ia601509.us.archive.org/35/items/poster-3/poster%20%283%29.jpg");
+  background-image: url("../img/poster-5.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -846,7 +845,7 @@ main .galeria__hover .galeria__hover--2 .hover__img .hover__img--1:hover {
 }
 
 main .galeria__hover .galeria__hover--2 .hover__img .hover__img--2 {
-  background-image: url("https://ia801508.us.archive.org/30/items/poster-20/poster%20%2814%29.jpg");
+  background-image: url("../img/poster-6.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -861,7 +860,7 @@ main .galeria__hover .galeria__hover--2 .hover__img .hover__img--2:hover {
 }
 
 main .galeria__hover .galeria__hover--2 .hover__img .hover__img--3 {
-  background-image: url("https://ia801508.us.archive.org/30/items/poster-20/poster%20%2815%29.jpg");
+  background-image: url("../img/poster-7.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -876,7 +875,7 @@ main .galeria__hover .galeria__hover--2 .hover__img .hover__img--3:hover {
 }
 
 main .galeria__hover .galeria__hover--2 .hover__img .hover__img--4 {
-  background-image: url("https://ia801508.us.archive.org/30/items/poster-20/poster%20%2816%29.jpg");
+  background-image: url("../img/poster-8.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1007,6 +1006,9 @@ footer .sign {
   }
   main .galeria__hover {
     display: block;
+  }
+  main .galeria__hover .galeria__hover--2 {
+    padding-top: 1rem;
   }
   footer .socialMedia {
     padding: 0 1rem 1rem 0;
@@ -1155,6 +1157,9 @@ footer .sign {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  main .galeria__hover .galeria__hover--2 {
+    padding-top: 0;
   }
 }
 

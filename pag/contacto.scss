@@ -62,7 +62,7 @@ $gradient: linear-gradient(
         rgba(20, 24, 29, 0.01642493) 56.87777778%,
         rgba(20, 24, 29, 0) 58.51851852%
     );
-$imgPortada: "https://ia801406.us.archive.org/31/items/contact_202108/contact.jpg";
+$imgPortada: "../img/contact.jpg";
 $bgPortada: $gradient, url($imgPortada);
 //
 @mixin bgImgSettings {
@@ -80,87 +80,90 @@ $bgPortada: $gradient, url($imgPortada);
     list-style: none;
     text-decoration: none !important;
 }
+//
 .master {
     width: 100%;
     min-height: 100vh;
     background: $bg;
-}
-//
-header {
-    h1 {
-        font-family: "Palette Mosaic", cursive;
-        padding-left: 2rem;
-    }
-    #navbarNav {
-        background: $bg !important;
-        .dropdown-menu {
-            background: $bg;
-            a {
-                text-align: center;
-                padding: 10px 0;
-                span {
-                    padding: 0 10px;
-                }
-                &:hover {
-                    background: $bg !important;
+    // 
+    header {
+        #navbarNav {
+            background: $bg !important;
+            h1 {
+                font-family: "Palette Mosaic", cursive;
+                padding-left: 2rem;
+            }
+            .dropdown-menu {
+                background: $bg;
+                a {
+                    text-align: center;
+                    padding: 10px 0;
+                    span {
+                        padding: 0 10px;
+                    }
+                    &:hover {
+                        background: $bg !important;
+                    }
                 }
             }
         }
     }
-}
-main {
-    padding: 0 10%;
-    .portada {
-        background-image: $bgPortada;
-        @include bgImgSettings();
-        height: 75vh;
-        width: 100%;
-        .portada__texto {
+    // 
+    main {
+        padding: 0 10%;
+        .portada {
+            background-image: $bgPortada;
+            @include bgImgSettings();
+            height: 75vh;
             width: 100%;
-            text-align: center;
-            position: absolute;
-            top: 60%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            p {
-                font-family: "Lobster", cursive;
-                font-size: 3rem;
-            }
-        }
-    }
-    .formulario {
-        padding: 1rem;
-        color: white;
-    }
-}
-footer {
-    height: 200px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    .socialMedia {
-        ul {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            li {
-                padding: 0 1rem;
-                font-size: 2rem;
-                &:hover {
-                    transform: rotate(30deg);
-                    filter: drop-shadow(1px 3px 6px white);
+            .portada__texto {
+                width: 100%;
+                text-align: center;
+                position: absolute;
+                top: 60%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                p {
+                    font-family: "Lobster", cursive;
+                    font-size: 3rem;
                 }
             }
         }
+        .formulario {
+            padding: 1rem;
+            color: white;
+        }
     }
-    .sign {
-        font-family: "WindSong", cursive;
-        font-size: 1.5rem;
-        letter-spacing: 3px;
+    // 
+    footer {
+        height: 200px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .socialMedia {
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                li {
+                    padding: 0 1rem;
+                    font-size: 2rem;
+                    &:hover {
+                        transform: rotate(30deg);
+                        filter: drop-shadow(1px 3px 6px white);
+                    }
+                }
+            }
+        }
+        .sign {
+            font-family: "WindSong", cursive;
+            font-size: 1.5rem;
+            letter-spacing: 3px;
+        }
     }
 }
 //************************

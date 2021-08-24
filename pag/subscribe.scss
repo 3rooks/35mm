@@ -62,7 +62,7 @@ $gradient: linear-gradient(
         rgba(20, 24, 29, 0.01642493) 56.87777778%,
         rgba(20, 24, 29, 0) 58.51851852%
     );
-$imgPortada: "https://image.tmdb.org/t/p/original/c6OLXfKAk5BKeR6broC8pYiCquX.jpg";
+$imgPortada: "../img/sub.jpg";
 $bgPortada: $gradient, url($imgPortada);
 //
 @mixin bgImgSettings {
@@ -79,6 +79,7 @@ $bgPortada: $gradient, url($imgPortada);
     list-style: none;
     text-decoration: none !important;
 }
+//
 .master {
     width: 100%;
     min-height: 100vh;
@@ -86,12 +87,12 @@ $bgPortada: $gradient, url($imgPortada);
 
     //
     header {
-        h1 {
-            font-family: "Palette Mosaic", cursive;
-            padding-left: 2rem;
-        }
         #navbarNav {
             background: $bg !important;
+            h1 {
+                font-family: "Palette Mosaic", cursive;
+                padding-left: 2rem;
+            }
             .dropdown-menu {
                 background: $bg;
                 a {

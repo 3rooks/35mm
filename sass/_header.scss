@@ -1,10 +1,10 @@
 header {
-    h1 {
-        font-family: "Palette Mosaic", cursive;
-        padding-left: 2rem;
-    }
     #navbarNav {
         background: $bg !important;
+        h1 {
+            font-family: "Palette Mosaic", cursive;
+            padding-left: 2rem;
+        }
         .dropdown-menu {
             background: $bg;
             a {

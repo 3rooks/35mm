@@ -18,13 +18,13 @@
   background: #14181c;
 }
 
-.master header h1 {
-  font-family: "Palette Mosaic", cursive;
-  padding-left: 2rem;
-}
-
 .master header #navbarNav {
   background: #14181c !important;
+}
+
+.master header #navbarNav h1 {
+  font-family: "Palette Mosaic", cursive;
+  padding-left: 2rem;
 }
 
 .master header #navbarNav .dropdown-menu {
@@ -59,8 +59,8 @@
 }
 
 .master main .card-img-top:hover {
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 1.7s;
+  transition: 1.7s;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
 }

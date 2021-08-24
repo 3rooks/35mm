@@ -62,7 +62,7 @@ $gradient: linear-gradient(
         rgba(20, 24, 29, 0.01642493) 56.87777778%,
         rgba(20, 24, 29, 0) 58.51851852%
     );
-$imgPortada: "https://ia601503.us.archive.org/4/items/qt_20210823/QT.jpeg";
+$imgPortada: "../img/qt.jpeg";
 $bgPortada: $gradient, url($imgPortada);
 //
 @mixin bgImgSettings {
@@ -87,12 +87,12 @@ $bgPortada: $gradient, url($imgPortada);
     overflow: hidden;
     //
     header {
-        h1 {
-            font-family: "Palette Mosaic", cursive;
-            padding-left: 2rem;
-        }
         #navbarNav {
             background: $bg !important;
+            h1 {
+                font-family: "Palette Mosaic", cursive;
+                padding-left: 2rem;
+            }
             .dropdown-menu {
                 background: $bg;
                 a {
