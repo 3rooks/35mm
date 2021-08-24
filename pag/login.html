@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404</title>
+    <title>Login</title>
     <link rel="shortcut icon" href="../img/icono.png" type="image/x-icon">
-    <link rel="stylesheet" href="../pag/404.css">
+    <link rel="stylesheet" href="../pag/login.css">
     <!-- FA -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -19,10 +19,10 @@
     <!-- BS -->
     <!-- META SEO -->
     <meta name="author" content="me">
-    <meta name="title" content="404">
+    <meta name="title" content="Login">
     <!---->
-    <meta name="description" content="Error 404, Page Not Found">
-    <meta name="keywords" content="error, 404, page not found">
+    <meta name="description" content="Login">
+    <meta name="keywords" content="login, enter">
     <!---->
     <meta name="ROBOTS" content="INDEX, FOLLOW">
     <meta name="ROBOTS" content="ALL">
@@ -102,13 +102,46 @@
         </header>
         <!---->
         <main>
-            <div id="main">
-                <div class="fof">
-                    <h1>Oops!...</h1>
-                    <h2>Error 404</h2>
-                    <h3>Page Not Found</h3>
+            <section>
+                <div class="formulario">
+                    <div class="formulario__login">
+                        <form class="login">
+                            <h2 class="titulo">Login</h2>
+                            <div class="form-floating mb-2 text-dark">
+                                <input type="email" class="form-control" id="email" placeholder="Email Address"
+                                    required>
+                                <label for="email">Email Address *</label>
+                            </div>
+                            <div class="form-floating mb-2 text-dark">
+                                <input type="password" class="form-control" id="password" placeholder="Password *"
+                                    required>
+                                <label for="password">Password *</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                                <label class="form-check-label" for="flexCheckIndeterminate">
+                                    Remember Password
+                                    <div>
+                                        <a class="text-decoration-underline" href="../pag/404.html">Forgotten Your
+                                            Password?</a>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                <button type="submit" class="btn btn-primary">Enter</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="comentarios">
+                        <h3>Welcome!...</h3>
+                        <p>- Hi there! Thank you for being part of this community.</p>
+                        <p>- For any suggestion you can send us an <a class="text-decoration-underline"
+                                href="../pag/contact.html">email</a>.</p>
+                        <p>- You can also follow us on our social media.</p>
+                        <p>- Have a nice day.</p>
+                    </div>
                 </div>
-            </div>
+            </section>
         </main>
     </section>
     <!-- BS -->

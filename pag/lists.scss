@@ -1,0 +1,196 @@
+// FONTS
+@import url("https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap");
+// font-family: 'Palette Mosaic', cursive;
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Palette+Mosaic&display=swap");
+// font-family: "Lobster", cursive;
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+// font-family: 'Shadows Into Light', cursive;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Rampart+One&family=Shadows+Into+Light&family=WindSong:wght@500&display=swap");
+// font-family: 'WindSong', cursive;
+//**********************************
+$bg: #14181c;
+//
+$gradient: linear-gradient(
+        90deg,
+        #14181d 0,
+        rgba(20, 24, 29, 0.98556487) 0.97%,
+        rgba(20, 24, 29, 0.9451312) 2.07833333%,
+        rgba(20, 24, 29, 0.88300656) 3.29666667%,
+        rgba(20, 24, 29, 0.80349854) 4.60166667%,
+        rgba(20, 24, 29, 0.71091472) 5.96666667%,
+        rgba(20, 24, 29, 0.60956268) 7.365%,
+        rgba(20, 24, 29, 0.50375) 8.77166667%,
+        rgba(20, 24, 29, 0.39778426) 10.16%,
+        rgba(20, 24, 29, 0.29597303) 11.505%,
+        rgba(20, 24, 29, 0.20262391) 12.78%,
+        rgba(20, 24, 29, 0.12204446) 13.95833333%,
+        rgba(20, 24, 29, 0.05854227) 15.01666667%,
+        rgba(20, 24, 29, 0.01642493) 15.92833333%,
+        rgba(20, 24, 29, 0) 16.66666667%,
+        rgba(20, 24, 29, 0) 83.33333333%,
+        rgba(20, 24, 29, 0.01642493) 84.07166667%,
+        rgba(20, 24, 29, 0.05854227) 84.98333333%,
+        rgba(20, 24, 29, 0.12204446) 86.04166667%,
+        rgba(20, 24, 29, 0.20262391) 87.22%,
+        rgba(20, 24, 29, 0.29597303) 88.495%,
+        rgba(20, 24, 29, 0.39778426) 89.84%,
+        rgba(20, 24, 29, 0.50375) 91.22833333%,
+        rgba(20, 24, 29, 0.60956268) 92.635%,
+        rgba(20, 24, 29, 0.71091472) 94.03333333%,
+        rgba(20, 24, 29, 0.80349854) 95.39833333%,
+        rgba(20, 24, 29, 0.88300656) 96.70333333%,
+        rgba(20, 24, 29, 0.9451312) 97.92166667%,
+        rgba(20, 24, 29, 0.98556487) 99.03%,
+        #14181d
+    ),
+    linear-gradient(
+        0deg,
+        #14181d 0,
+        #14181d 21.48148148%,
+        rgba(20, 24, 29, 0.98556487) 23.63703704%,
+        rgba(20, 24, 29, 0.9451312) 26.1%,
+        rgba(20, 24, 29, 0.88300656) 28.80740741%,
+        rgba(20, 24, 29, 0.80349854) 31.70740741%,
+        rgba(20, 24, 29, 0.71091472) 34.74074074%,
+        rgba(20, 24, 29, 0.60956268) 37.84814815%,
+        rgba(20, 24, 29, 0.50375) 40.97407407%,
+        rgba(20, 24, 29, 0.39778426) 44.05925926%,
+        rgba(20, 24, 29, 0.29597303) 47.04814815%,
+        rgba(20, 24, 29, 0.20262391) 49.88148148%,
+        rgba(20, 24, 29, 0.12204446) 52.5%,
+        rgba(20, 24, 29, 0.05854227) 54.85185185%,
+        rgba(20, 24, 29, 0.01642493) 56.87777778%,
+        rgba(20, 24, 29, 0) 58.51851852%
+    );
+$imgPortada: "https://ia601503.us.archive.org/4/items/qt_20210823/QT.jpeg";
+$bgPortada: $gradient, url($imgPortada);
+//
+@mixin bgImgSettings {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+// RESET
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: inherit;
+    list-style: none;
+    text-decoration: none !important;
+}
+//
+.master {
+    width: 100%;
+    min-height: 100vh;
+    background: $bg;
+    //
+    header {
+        h1 {
+            font-family: "Palette Mosaic", cursive;
+            padding-left: 2rem;
+        }
+        #navbarNav {
+            background: $bg !important;
+            .dropdown-menu {
+                background: $bg;
+                a {
+                    text-align: center;
+                    padding: 10px 0;
+                    span {
+                        padding: 0 10px;
+                    }
+                    &:hover {
+                        background: $bg !important;
+                    }
+                }
+            }
+        }
+    }
+    //
+    main {
+        padding: 0 10%;
+        overflow: hidden;
+        .bread {
+            padding: 1rem 0 0 1rem;
+            li {
+                font-family: "Lobster", cursive;
+                letter-spacing: 2px;
+            }
+        }
+        .card-img-top:hover {
+            transition: 1s;
+            filter: grayscale(100%);
+        }
+        .card-body {
+            .card-title {
+                font-family: "Lobster", cursive;
+                letter-spacing: 2px;
+            }
+            p {
+                font-family: "monserrat";
+                font-size: 1.1rem;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
+//************************
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 992px,
+//   xl: 1200px,
+//   xxl: 1400px,
+
+@media only screen and (min-width: 0px) {
+    main {
+        padding: 0 1% !important;
+        .bread {
+            padding: 1rem 0 0 0.5rem !important;
+            li {
+                letter-spacing: 0px !important;
+            }
+        }
+    }
+}
+//
+@media only screen and (min-width: 576px) {
+    main {
+        padding: 0 2.5% !important;
+        .bread {
+            padding: 1rem 0 0 0.5rem !important;
+            li {
+                font-family: "Lobster", cursive !important;
+                letter-spacing: 2px !important;
+            }
+        }
+    }
+}
+//
+@media only screen and (min-width: 768px) {
+    main {
+        padding: 0 5% !important;
+        .bread {
+            padding: 1rem 0 0 1rem !important;
+        }
+    }
+}
+//
+@media only screen and (min-width: 992px) {
+    main {
+        padding: 0 7.5% !important;
+    }
+}
+//
+@media only screen and (min-width: 1200px) {
+    main {
+        padding: 0 10% !important;
+    }
+}
+//
+@media only screen and (min-width: 1400px) {
+    main {
+        padding: 0 10% !important;
+    }
+}

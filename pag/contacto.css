@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Palette+Mosaic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Rampart+One&family=Shadows+Into+Light&family=WindSong:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: inherit;
+  list-style: none;
+  text-decoration: none !important;
+}
+
+.master {
+  width: 100%;
+  min-height: 100vh;
+  background: #14181c;
+}
+
+header h1 {
+  font-family: "Palette Mosaic", cursive;
+  padding-left: 2rem;
+}
+
+header #navbarNav {
+  background: #14181c !important;
+}
+
+header #navbarNav .dropdown-menu {
+  background: #14181c;
+}
+
+header #navbarNav .dropdown-menu a {
+  text-align: center;
+  padding: 10px 0;
+}
+
+header #navbarNav .dropdown-menu a span {
+  padding: 0 10px;
+}
+
+header #navbarNav .dropdown-menu a:hover {
+  background: #14181c !important;
+}
+
+main {
+  padding: 0 10%;
+}
+
+main .portada {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #14181d), color-stop(0.97%, rgba(20, 24, 29, 0.985565)), color-stop(2.07833%, rgba(20, 24, 29, 0.945131)), color-stop(3.29667%, rgba(20, 24, 29, 0.883007)), color-stop(4.60167%, rgba(20, 24, 29, 0.803499)), color-stop(5.96667%, rgba(20, 24, 29, 0.710915)), color-stop(7.365%, rgba(20, 24, 29, 0.609563)), color-stop(8.77167%, rgba(20, 24, 29, 0.50375)), color-stop(10.16%, rgba(20, 24, 29, 0.397784)), color-stop(11.505%, rgba(20, 24, 29, 0.295973)), color-stop(12.78%, rgba(20, 24, 29, 0.202624)), color-stop(13.95833%, rgba(20, 24, 29, 0.122044)), color-stop(15.01667%, rgba(20, 24, 29, 0.0585423)), color-stop(15.92833%, rgba(20, 24, 29, 0.0164249)), color-stop(16.66667%, rgba(20, 24, 29, 0)), color-stop(83.33333%, rgba(20, 24, 29, 0)), color-stop(84.07167%, rgba(20, 24, 29, 0.0164249)), color-stop(84.98333%, rgba(20, 24, 29, 0.0585423)), color-stop(86.04167%, rgba(20, 24, 29, 0.122044)), color-stop(87.22%, rgba(20, 24, 29, 0.202624)), color-stop(88.495%, rgba(20, 24, 29, 0.295973)), color-stop(89.84%, rgba(20, 24, 29, 0.397784)), color-stop(91.22833%, rgba(20, 24, 29, 0.50375)), color-stop(92.635%, rgba(20, 24, 29, 0.609563)), color-stop(94.03333%, rgba(20, 24, 29, 0.710915)), color-stop(95.39833%, rgba(20, 24, 29, 0.803499)), color-stop(96.70333%, rgba(20, 24, 29, 0.883007)), color-stop(97.92167%, rgba(20, 24, 29, 0.945131)), color-stop(99.03%, rgba(20, 24, 29, 0.985565)), to(#14181d)), -webkit-gradient(linear, left bottom, left top, color-stop(0, #14181d), color-stop(21.48148%, #14181d), color-stop(23.63704%, rgba(20, 24, 29, 0.985565)), color-stop(26.1%, rgba(20, 24, 29, 0.945131)), color-stop(28.80741%, rgba(20, 24, 29, 0.883007)), color-stop(31.70741%, rgba(20, 24, 29, 0.803499)), color-stop(34.74074%, rgba(20, 24, 29, 0.710915)), color-stop(37.84815%, rgba(20, 24, 29, 0.609563)), color-stop(40.97407%, rgba(20, 24, 29, 0.50375)), color-stop(44.05926%, rgba(20, 24, 29, 0.397784)), color-stop(47.04815%, rgba(20, 24, 29, 0.295973)), color-stop(49.88148%, rgba(20, 24, 29, 0.202624)), color-stop(52.5%, rgba(20, 24, 29, 0.122044)), color-stop(54.85185%, rgba(20, 24, 29, 0.0585423)), color-stop(56.87778%, rgba(20, 24, 29, 0.0164249)), color-stop(58.51852%, rgba(20, 24, 29, 0))), url("https://ia801406.us.archive.org/31/items/contact_202108/contact.jpg");
+  background-image: linear-gradient(90deg, #14181d 0, rgba(20, 24, 29, 0.985565) 0.97%, rgba(20, 24, 29, 0.945131) 2.07833%, rgba(20, 24, 29, 0.883007) 3.29667%, rgba(20, 24, 29, 0.803499) 4.60167%, rgba(20, 24, 29, 0.710915) 5.96667%, rgba(20, 24, 29, 0.609563) 7.365%, rgba(20, 24, 29, 0.50375) 8.77167%, rgba(20, 24, 29, 0.397784) 10.16%, rgba(20, 24, 29, 0.295973) 11.505%, rgba(20, 24, 29, 0.202624) 12.78%, rgba(20, 24, 29, 0.122044) 13.95833%, rgba(20, 24, 29, 0.0585423) 15.01667%, rgba(20, 24, 29, 0.0164249) 15.92833%, rgba(20, 24, 29, 0) 16.66667%, rgba(20, 24, 29, 0) 83.33333%, rgba(20, 24, 29, 0.0164249) 84.07167%, rgba(20, 24, 29, 0.0585423) 84.98333%, rgba(20, 24, 29, 0.122044) 86.04167%, rgba(20, 24, 29, 0.202624) 87.22%, rgba(20, 24, 29, 0.295973) 88.495%, rgba(20, 24, 29, 0.397784) 89.84%, rgba(20, 24, 29, 0.50375) 91.22833%, rgba(20, 24, 29, 0.609563) 92.635%, rgba(20, 24, 29, 0.710915) 94.03333%, rgba(20, 24, 29, 0.803499) 95.39833%, rgba(20, 24, 29, 0.883007) 96.70333%, rgba(20, 24, 29, 0.945131) 97.92167%, rgba(20, 24, 29, 0.985565) 99.03%, #14181d), linear-gradient(0deg, #14181d 0, #14181d 21.48148%, rgba(20, 24, 29, 0.985565) 23.63704%, rgba(20, 24, 29, 0.945131) 26.1%, rgba(20, 24, 29, 0.883007) 28.80741%, rgba(20, 24, 29, 0.803499) 31.70741%, rgba(20, 24, 29, 0.710915) 34.74074%, rgba(20, 24, 29, 0.609563) 37.84815%, rgba(20, 24, 29, 0.50375) 40.97407%, rgba(20, 24, 29, 0.397784) 44.05926%, rgba(20, 24, 29, 0.295973) 47.04815%, rgba(20, 24, 29, 0.202624) 49.88148%, rgba(20, 24, 29, 0.122044) 52.5%, rgba(20, 24, 29, 0.0585423) 54.85185%, rgba(20, 24, 29, 0.0164249) 56.87778%, rgba(20, 24, 29, 0) 58.51852%), url("https://ia801406.us.archive.org/31/items/contact_202108/contact.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 75vh;
+  width: 100%;
+}
+
+main .portada .portada__texto {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+}
+
+main .portada .portada__texto p {
+  font-family: "Lobster", cursive;
+  font-size: 3rem;
+}
+
+main .formulario {
+  padding: 1rem;
+  color: white;
+}
+
+footer {
+  height: 200px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+footer .socialMedia ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .socialMedia ul li {
+  padding: 0 1rem;
+  font-size: 2rem;
+}
+
+footer .socialMedia ul li:hover {
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  -webkit-filter: drop-shadow(1px 3px 6px white);
+          filter: drop-shadow(1px 3px 6px white);
+}
+
+footer .sign {
+  font-family: "WindSong", cursive;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+}
+
+@media only screen and (min-width: 0px) {
+  .portada {
+    height: 50vh !important;
+  }
+  .portada .portada__texto {
+    top: 43% !important;
+    padding: 2rem;
+  }
+  .portada p {
+    font-size: 1.1rem !important;
+  }
+  .formulario {
+    padding: 1rem 0% 1rem 0% !important;
+  }
+  footer .socialMedia {
+    padding: 0 1rem 1rem 0;
+  }
+  footer .socialMedia li {
+    padding: 0 1rem;
+    font-size: 2rem !important;
+  }
+  footer .sign {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .portada {
+    height: 50vh !important;
+  }
+  .portada .portada__texto {
+    top: 45% !important;
+    padding: 2rem;
+  }
+  .portada p {
+    font-size: 1.3rem !important;
+  }
+  .formulario {
+    padding: 1rem 5% 1rem 5% !important;
+  }
+  .sign {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .portada {
+    height: 55vh !important;
+  }
+  .portada .portada__texto {
+    top: 50% !important;
+    padding: 2rem;
+  }
+  .portada p {
+    font-size: 1.75rem !important;
+  }
+  .formulario {
+    padding: 1rem 10% 1rem 10% !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .portada {
+    height: 55vh !important;
+  }
+  .portada .portada__texto {
+    top: 50% !important;
+    padding: 2rem;
+  }
+  .portada p {
+    font-size: 2rem !important;
+  }
+  .formulario {
+    padding: 1rem 15% 1rem 15% !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .portada {
+    height: 65vh !important;
+  }
+  .portada .portada__texto {
+    top: 55% !important;
+    padding: 2rem;
+  }
+  .portada p {
+    font-size: 2.5rem !important;
+  }
+  .formulario {
+    padding: 1rem 20% 1rem 20% !important;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .portada {
+    height: 60vh !important;
+  }
+  .portada .portada__texto {
+    top: 55% !important;
+    padding: 2rem;
+  }
+  .portada p {
+    font-size: 2.5rem !important;
+  }
+  .formulario {
+    padding: 1rem 20% 1rem 20% !important;
+  }
+}
+/*# sourceMappingURL=contacto.css.map */

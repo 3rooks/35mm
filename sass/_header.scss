@@ -1,32 +1,121 @@
-.header__logo--titulo {
-    font-style: oblique;
-    font-weight: bold;
-    font-size: 2rem;
-    text-decoration: underline !important;
-}
-
-.canvas__nav--body {
-    position: relative;
-    top: -20px;
-    .lista__nav--redes {
-        padding-top: 5px;
+header {
+    h1 {
+        font-family: "Palette Mosaic", cursive;
+        padding-left: 2rem;
     }
-    .nav__social--redes {
-        padding: 5px 10%;
-    }
-    .text__nav--redes {
-        padding: 0 10px;
-    }
-}
-
-.dropdown-menu {
-    li {
-        padding: 3px;
-        em {
-            padding: 0 10px;
+    #navbarNav {
+        background: $bg !important;
+        .dropdown-menu {
+            background: $bg;
+            a {
+                text-align: center;
+                padding: 10px 0;
+                span {
+                    padding: 0 10px;
+                }
+                &:hover {
+                    background: $bg !important;
+                }
+            }
         }
     }
-    a:hover {
-        background-color: #212529;
+    //
+    .portada {
+        background-image: $bgPortada;
+        @include bgImgSettings();
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        .portada__texto {
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            p {
+                font-family: "Lobster", cursive;
+                font-size: 3rem;
+            }
+            .portada__boton {
+                border: 5px double white;
+                width: 325px;
+                position: relative;
+                display: inline-block;
+                padding: 5px 0;
+                margin-top: 1rem;
+                letter-spacing: 3px;
+                overflow: hidden;
+                text-align: center;
+                background: $bg !important;
+                &:hover {
+                    background: #0d6efd !important;
+                    transition-delay: 1s;
+                }
+                h2 {
+                    font-family: "Lobster", cursive;
+                    font-size: 1.5rem;
+                    padding-top: 10px;
+                }
+                span {
+                    position: absolute;
+                    display: block;
+                }
+                .span1 {
+                    top: 0;
+                    left: -100%;
+                    width: 100%;
+                    height: 5px;
+                    background: linear-gradient(90deg, transparent, #0d6efd);
+                }
+                .span2 {
+                    top: -100%;
+                    right: 0;
+                    width: 5px;
+                    height: 100%;
+                    background: linear-gradient(180deg, transparent, #0d6efd);
+                    transition-delay: 0.5s;
+                }
+                .span3 {
+                    bottom: 0;
+                    right: -100%;
+                    width: 100%;
+                    height: 5px;
+                    background: linear-gradient(270deg, transparent, #0d6efd);
+                }
+                .span4 {
+                    bottom: -100%;
+                    left: 0;
+                    width: 5px;
+                    height: 100%;
+                    background: linear-gradient(360deg, transparent, #0d6efd);
+                }
+                &:hover {
+                    background: #0d6efd;
+                    box-shadow: 0 0 10px #0d6efd, 0 0 40px #0d6efd, 0 0 80px #0d6efd;
+                    transition-delay: 1s;
+                }
+                &:hover .span1 {
+                    left: 100%;
+                    transition: 1s;
+                }
+                &:hover .span2 {
+                    top: 100%;
+                    transition: 1s;
+                    transition-delay: 0.25s;
+                }
+                &:hover .span3 {
+                    right: 100%;
+                    transition: 1s;
+                    transition-delay: 0.5s;
+                }
+                &:hover .span4 {
+                    bottom: 100%;
+                    transition: 1s;
+                    transition-delay: 0.75s;
+                }
+            }
+        }
     }
 }

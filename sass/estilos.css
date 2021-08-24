@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Palette+Mosaic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Rampart+One&family=Shadows+Into+Light&family=WindSong:wght@500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,576 +12,108 @@
   text-decoration: none !important;
 }
 
-html {
-  text-transform: capitalize;
+.master {
+  width: 100%;
+  min-height: 100vh;
+  background: #14181c;
 }
 
-body {
-  background-image: url("../img/background.png");
+header h1 {
+  font-family: "Palette Mosaic", cursive;
+  padding-left: 2rem;
 }
 
-body p {
+header #navbarNav {
+  background: #14181c !important;
+}
+
+header #navbarNav .dropdown-menu {
+  background: #14181c;
+}
+
+header #navbarNav .dropdown-menu a {
+  text-align: center;
+  padding: 10px 0;
+}
+
+header #navbarNav .dropdown-menu a span {
+  padding: 0 10px;
+}
+
+header #navbarNav .dropdown-menu a:hover {
+  background: #14181c !important;
+}
+
+header .portada {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #14181d), color-stop(0.97%, rgba(20, 24, 29, 0.985565)), color-stop(2.07833%, rgba(20, 24, 29, 0.945131)), color-stop(3.29667%, rgba(20, 24, 29, 0.883007)), color-stop(4.60167%, rgba(20, 24, 29, 0.803499)), color-stop(5.96667%, rgba(20, 24, 29, 0.710915)), color-stop(7.365%, rgba(20, 24, 29, 0.609563)), color-stop(8.77167%, rgba(20, 24, 29, 0.50375)), color-stop(10.16%, rgba(20, 24, 29, 0.397784)), color-stop(11.505%, rgba(20, 24, 29, 0.295973)), color-stop(12.78%, rgba(20, 24, 29, 0.202624)), color-stop(13.95833%, rgba(20, 24, 29, 0.122044)), color-stop(15.01667%, rgba(20, 24, 29, 0.0585423)), color-stop(15.92833%, rgba(20, 24, 29, 0.0164249)), color-stop(16.66667%, rgba(20, 24, 29, 0)), color-stop(83.33333%, rgba(20, 24, 29, 0)), color-stop(84.07167%, rgba(20, 24, 29, 0.0164249)), color-stop(84.98333%, rgba(20, 24, 29, 0.0585423)), color-stop(86.04167%, rgba(20, 24, 29, 0.122044)), color-stop(87.22%, rgba(20, 24, 29, 0.202624)), color-stop(88.495%, rgba(20, 24, 29, 0.295973)), color-stop(89.84%, rgba(20, 24, 29, 0.397784)), color-stop(91.22833%, rgba(20, 24, 29, 0.50375)), color-stop(92.635%, rgba(20, 24, 29, 0.609563)), color-stop(94.03333%, rgba(20, 24, 29, 0.710915)), color-stop(95.39833%, rgba(20, 24, 29, 0.803499)), color-stop(96.70333%, rgba(20, 24, 29, 0.883007)), color-stop(97.92167%, rgba(20, 24, 29, 0.945131)), color-stop(99.03%, rgba(20, 24, 29, 0.985565)), to(#14181d)), -webkit-gradient(linear, left bottom, left top, color-stop(0, #14181d), color-stop(21.48148%, #14181d), color-stop(23.63704%, rgba(20, 24, 29, 0.985565)), color-stop(26.1%, rgba(20, 24, 29, 0.945131)), color-stop(28.80741%, rgba(20, 24, 29, 0.883007)), color-stop(31.70741%, rgba(20, 24, 29, 0.803499)), color-stop(34.74074%, rgba(20, 24, 29, 0.710915)), color-stop(37.84815%, rgba(20, 24, 29, 0.609563)), color-stop(40.97407%, rgba(20, 24, 29, 0.50375)), color-stop(44.05926%, rgba(20, 24, 29, 0.397784)), color-stop(47.04815%, rgba(20, 24, 29, 0.295973)), color-stop(49.88148%, rgba(20, 24, 29, 0.202624)), color-stop(52.5%, rgba(20, 24, 29, 0.122044)), color-stop(54.85185%, rgba(20, 24, 29, 0.0585423)), color-stop(56.87778%, rgba(20, 24, 29, 0.0164249)), color-stop(58.51852%, rgba(20, 24, 29, 0))), url("https://archive.org/download/the_master/the_master.png");
+  background-image: linear-gradient(90deg, #14181d 0, rgba(20, 24, 29, 0.985565) 0.97%, rgba(20, 24, 29, 0.945131) 2.07833%, rgba(20, 24, 29, 0.883007) 3.29667%, rgba(20, 24, 29, 0.803499) 4.60167%, rgba(20, 24, 29, 0.710915) 5.96667%, rgba(20, 24, 29, 0.609563) 7.365%, rgba(20, 24, 29, 0.50375) 8.77167%, rgba(20, 24, 29, 0.397784) 10.16%, rgba(20, 24, 29, 0.295973) 11.505%, rgba(20, 24, 29, 0.202624) 12.78%, rgba(20, 24, 29, 0.122044) 13.95833%, rgba(20, 24, 29, 0.0585423) 15.01667%, rgba(20, 24, 29, 0.0164249) 15.92833%, rgba(20, 24, 29, 0) 16.66667%, rgba(20, 24, 29, 0) 83.33333%, rgba(20, 24, 29, 0.0164249) 84.07167%, rgba(20, 24, 29, 0.0585423) 84.98333%, rgba(20, 24, 29, 0.122044) 86.04167%, rgba(20, 24, 29, 0.202624) 87.22%, rgba(20, 24, 29, 0.295973) 88.495%, rgba(20, 24, 29, 0.397784) 89.84%, rgba(20, 24, 29, 0.50375) 91.22833%, rgba(20, 24, 29, 0.609563) 92.635%, rgba(20, 24, 29, 0.710915) 94.03333%, rgba(20, 24, 29, 0.803499) 95.39833%, rgba(20, 24, 29, 0.883007) 96.70333%, rgba(20, 24, 29, 0.945131) 97.92167%, rgba(20, 24, 29, 0.985565) 99.03%, #14181d), linear-gradient(0deg, #14181d 0, #14181d 21.48148%, rgba(20, 24, 29, 0.985565) 23.63704%, rgba(20, 24, 29, 0.945131) 26.1%, rgba(20, 24, 29, 0.883007) 28.80741%, rgba(20, 24, 29, 0.803499) 31.70741%, rgba(20, 24, 29, 0.710915) 34.74074%, rgba(20, 24, 29, 0.609563) 37.84815%, rgba(20, 24, 29, 0.50375) 40.97407%, rgba(20, 24, 29, 0.397784) 44.05926%, rgba(20, 24, 29, 0.295973) 47.04815%, rgba(20, 24, 29, 0.202624) 49.88148%, rgba(20, 24, 29, 0.122044) 52.5%, rgba(20, 24, 29, 0.0585423) 54.85185%, rgba(20, 24, 29, 0.0164249) 56.87778%, rgba(20, 24, 29, 0) 58.51852%), url("https://archive.org/download/the_master/the_master.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+header .portada .portada__texto {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   color: white;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body a {
-  color: white !important;
+header .portada .portada__texto p {
+  font-family: "Lobster", cursive;
+  font-size: 3rem;
 }
 
-.header__logo--titulo {
-  font-style: oblique;
-  font-weight: bold;
-  font-size: 2rem;
-  text-decoration: underline !important;
-}
-
-.canvas__nav--body {
-  position: relative;
-  top: -20px;
-}
-
-.canvas__nav--body .lista__nav--redes {
-  padding-top: 5px;
-}
-
-.canvas__nav--body .nav__social--redes {
-  padding: 5px 10%;
-}
-
-.canvas__nav--body .text__nav--redes {
-  padding: 0 10px;
-}
-
-.dropdown-menu li {
-  padding: 3px;
-}
-
-.dropdown-menu li em {
-  padding: 0 10px;
-}
-
-.dropdown-menu a:hover {
-  background-color: #212529;
-}
-
-.carrusel {
-  width: 100%;
-}
-
-.carrusel .carrusel__img--c1 {
-  background-image: url("../img/c1.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.carrusel .carrusel__img--c2 {
-  background-image: url("../img/c2.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.carrusel .carrusel__img--c3 {
-  background-image: url("../img/c3.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.grid {
-  height: 100%;
-}
-
-.grid .grid__galeria {
-  display: -ms-grid;
-  display: grid;
-}
-
-.grid .grid__galeria .grid__img--i1 {
-  background-image: url("../img/i1.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 600px;
-  min-width: 1fr;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.grid .grid__galeria .grid__img--i1:hover {
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-}
-
-.grid .grid__galeria .grid__img--i1 .descripcion {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  text-align: center;
-}
-
-.grid .grid__galeria .grid__img--i1:hover .descripcion {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-.grid .grid__galeria .grid__img--i2 {
-  background-image: url("../img/i2.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 600px;
-  min-width: 1fr;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.grid .grid__galeria .grid__img--i2:hover {
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-}
-
-.grid .grid__galeria .grid__img--i2 .descripcion {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  text-align: center;
-}
-
-.grid .grid__galeria .grid__img--i2:hover .descripcion {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-.grid .grid__galeria .grid__img--i3 {
-  background-image: url("../img/i3.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 600px;
-  min-width: 1fr;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.grid .grid__galeria .grid__img--i3:hover {
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-}
-
-.grid .grid__galeria .grid__img--i3 .descripcion {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  text-align: center;
-}
-
-.grid .grid__galeria .grid__img--i3:hover .descripcion {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-.grid .grid__galeria .grid__img--i4 {
-  background-image: url("../img/i4.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 600px;
-  min-width: 1fr;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.grid .grid__galeria .grid__img--i4:hover {
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-}
-
-.grid .grid__galeria .grid__img--i4 .descripcion {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  text-align: center;
-}
-
-.grid .grid__galeria .grid__img--i4:hover .descripcion {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-.grid .grid__galeria .grid__img--i5 {
-  background-image: url("../img/i5.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 600px;
-  min-width: 1fr;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.grid .grid__galeria .grid__img--i5:hover {
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-}
-
-.grid .grid__galeria .grid__img--i5 .descripcion {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  text-align: center;
-}
-
-.grid .grid__galeria .grid__img--i5:hover .descripcion {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-.grid .grid__galeria .grid__img--i6 {
-  background-image: url("../img/i6.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 600px;
-  min-width: 1fr;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.grid .grid__galeria .grid__img--i6:hover {
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-}
-
-.grid .grid__galeria .grid__img--i6 .descripcion {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  text-align: center;
-}
-
-.grid .grid__galeria .grid__img--i6:hover .descripcion {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-.grid .grid__galeria .grid__img--i7 {
-  background-image: url("../img/i7.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 600px;
-  min-width: 1fr;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.grid .grid__galeria .grid__img--i7:hover {
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-}
-
-.grid .grid__galeria .grid__img--i7 .descripcion {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  text-align: center;
-}
-
-.grid .grid__galeria .grid__img--i7:hover .descripcion {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-.grid .grid__galeria .grid__img--i8 {
-  background-image: url("../img/i8.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 600px;
-  min-width: 1fr;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.grid .grid__galeria .grid__img--i8:hover {
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-}
-
-.grid .grid__galeria .grid__img--i8 .descripcion {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  text-align: center;
-}
-
-.grid .grid__galeria .grid__img--i8:hover .descripcion {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-.footer__main {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  text-align: center;
-}
-
-.footer__main .footer__social--redes {
-  margin: 1rem;
-}
-
-.footer__main .footer__social--redes:hover {
-  -webkit-filter: drop-shadow(1px 1px 15px white);
-          filter: drop-shadow(1px 1px 15px white);
-}
-
-#boton-sub {
-  border: 4px double white;
-  width: 100%;
+header .portada .portada__texto .portada__boton {
+  border: 5px double white;
+  width: 325px;
   position: relative;
   display: inline-block;
-  padding: 10px 20px;
-  letter-spacing: 1px;
+  padding: 5px 0;
+  margin-top: 1rem;
+  letter-spacing: 3px;
   overflow: hidden;
+  text-align: center;
+  background: #14181c !important;
 }
 
-#boton-sub span {
+header .portada .portada__texto .portada__boton:hover {
+  background: #0d6efd !important;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+header .portada .portada__texto .portada__boton h2 {
+  font-family: "Lobster", cursive;
+  font-size: 1.5rem;
+  padding-top: 10px;
+}
+
+header .portada .portada__texto .portada__boton span {
   position: absolute;
   display: block;
 }
 
-#boton-sub .span1 {
+header .portada .portada__texto .portada__boton .span1 {
   top: 0;
   left: -100%;
   width: 100%;
-  height: 3px;
+  height: 5px;
   background: -webkit-gradient(linear, left top, right top, from(transparent), to(#0d6efd));
   background: linear-gradient(90deg, transparent, #0d6efd);
 }
 
-#boton-sub .span2 {
+header .portada .portada__texto .portada__boton .span2 {
   top: -100%;
   right: 0;
-  width: 3px;
+  width: 5px;
   height: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#0d6efd));
   background: linear-gradient(180deg, transparent, #0d6efd);
@@ -585,25 +121,25 @@ body a {
           transition-delay: 0.5s;
 }
 
-#boton-sub .span3 {
+header .portada .portada__texto .portada__boton .span3 {
   bottom: 0;
   right: -100%;
   width: 100%;
-  height: 3px;
+  height: 5px;
   background: -webkit-gradient(linear, right top, left top, from(transparent), to(#0d6efd));
   background: linear-gradient(270deg, transparent, #0d6efd);
 }
 
-#boton-sub .span4 {
+header .portada .portada__texto .portada__boton .span4 {
   bottom: -100%;
   left: 0;
-  width: 3px;
+  width: 5px;
   height: 100%;
   background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#0d6efd));
   background: linear-gradient(360deg, transparent, #0d6efd);
 }
 
-#boton-sub:hover {
+header .portada .portada__texto .portada__boton:hover {
   background: #0d6efd;
   -webkit-box-shadow: 0 0 10px #0d6efd, 0 0 40px #0d6efd, 0 0 80px #0d6efd;
           box-shadow: 0 0 10px #0d6efd, 0 0 40px #0d6efd, 0 0 80px #0d6efd;
@@ -611,13 +147,13 @@ body a {
           transition-delay: 1s;
 }
 
-#boton-sub:hover .span1 {
+header .portada .portada__texto .portada__boton:hover .span1 {
   left: 100%;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-#boton-sub:hover .span2 {
+header .portada .portada__texto .portada__boton:hover .span2 {
   top: 100%;
   -webkit-transition: 1s;
   transition: 1s;
@@ -625,7 +161,7 @@ body a {
           transition-delay: 0.25s;
 }
 
-#boton-sub:hover .span3 {
+header .portada .portada__texto .portada__boton:hover .span3 {
   right: 100%;
   -webkit-transition: 1s;
   transition: 1s;
@@ -633,7 +169,7 @@ body a {
           transition-delay: 0.5s;
 }
 
-#boton-sub:hover .span4 {
+header .portada .portada__texto .portada__boton:hover .span4 {
   bottom: 100%;
   -webkit-transition: 1s;
   transition: 1s;
@@ -641,120 +177,1075 @@ body a {
           transition-delay: 0.75s;
 }
 
+main {
+  overflow: hidden;
+  padding: 0 10%;
+}
+
+main .titulosSecciones {
+  font-family: "Lobster", cursive;
+  letter-spacing: 3px;
+}
+
+main .galeria__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  height: 100%;
+  width: 100%;
+  margin: 0 0 1rem 0;
+  font-family: "Shadows Into Light", cursive;
+  letter-spacing: 3px;
+}
+
+main .galeria__grid .grid__img--1 {
+  background-image: url("https://ia801504.us.archive.org/13/items/the-return_202108/no%20country%20for%20old%20man.jpg");
+  height: 600px;
+  width: 1fr;
+  border: 1px solid white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+main .galeria__grid .grid__img--1:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+main .galeria__grid .grid__img--1 .grid__img--descripcion {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+  text-align: center;
+  color: white;
+}
+
+main .galeria__grid .grid__img--1:hover .grid__img--descripcion {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+main .galeria__grid .grid__img--2 {
+  background-image: url("https://ia801504.us.archive.org/13/items/the-return_202108/there%20will%20be%20blood.jpg");
+  height: 600px;
+  width: 1fr;
+  border: 1px solid white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+main .galeria__grid .grid__img--2:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+main .galeria__grid .grid__img--2 .grid__img--descripcion {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+  text-align: center;
+  color: white;
+}
+
+main .galeria__grid .grid__img--2:hover .grid__img--descripcion {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+main .galeria__grid .grid__img--3 {
+  background-image: url("https://ia801504.us.archive.org/13/items/the-return_202108/inglorious%20basterds.jpg");
+  height: 600px;
+  width: 1fr;
+  border: 1px solid white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+main .galeria__grid .grid__img--3:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+main .galeria__grid .grid__img--3 .grid__img--descripcion {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+  text-align: center;
+  color: white;
+}
+
+main .galeria__grid .grid__img--3:hover .grid__img--descripcion {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+main .galeria__grid .grid__img--4 {
+  background-image: url("https://ia601504.us.archive.org/13/items/the-return_202108/the%20handmaiden.jpg");
+  height: 600px;
+  width: 1fr;
+  border: 1px solid white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+main .galeria__grid .grid__img--4:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+main .galeria__grid .grid__img--4 .grid__img--descripcion {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+  text-align: center;
+  color: white;
+}
+
+main .galeria__grid .grid__img--4:hover .grid__img--descripcion {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+main .galeria__grid .grid__img--5 {
+  background-image: url("https://ia601504.us.archive.org/13/items/the-return_202108/the%20return.jpg");
+  height: 600px;
+  width: 1fr;
+  border: 1px solid white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+main .galeria__grid .grid__img--5:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+main .galeria__grid .grid__img--5 .grid__img--descripcion {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+  text-align: center;
+  color: white;
+}
+
+main .galeria__grid .grid__img--5:hover .grid__img--descripcion {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+main .galeria__grid .grid__img--6 {
+  background-image: url("https://ia601504.us.archive.org/13/items/the-return_202108/the%20lighthouse.jpg");
+  height: 600px;
+  width: 1fr;
+  border: 1px solid white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+main .galeria__grid .grid__img--6:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+main .galeria__grid .grid__img--6 .grid__img--descripcion {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+  text-align: center;
+  color: white;
+}
+
+main .galeria__grid .grid__img--6:hover .grid__img--descripcion {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+main .galeria__grid .grid__img--7 {
+  background-image: url("https://ia801504.us.archive.org/13/items/the-return_202108/hereditary.jpg");
+  height: 600px;
+  width: 1fr;
+  border: 1px solid white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+main .galeria__grid .grid__img--7:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+main .galeria__grid .grid__img--7 .grid__img--descripcion {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+  text-align: center;
+  color: white;
+}
+
+main .galeria__grid .grid__img--7:hover .grid__img--descripcion {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+main .galeria__grid .grid__img--8 {
+  background-image: url("https://ia801504.us.archive.org/13/items/the-return_202108/climax.jpg");
+  height: 600px;
+  width: 1fr;
+  border: 1px solid white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+main .galeria__grid .grid__img--8:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+main .galeria__grid .grid__img--8 .grid__img--descripcion {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+  text-align: center;
+  color: white;
+}
+
+main .galeria__grid .grid__img--8:hover .grid__img--descripcion {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+main .carrusel__comentarios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 60vh;
+  margin: 0 0 1rem 0;
+}
+
+main .carrusel__comentarios a {
+  color: white;
+}
+
+main .carrusel__comentarios .carrusel {
+  width: 70%;
+  font-family: "Lobster", cursive;
+  letter-spacing: 3px;
+}
+
+main .carrusel__comentarios .carrusel .carrusel__img {
+  height: 60vh;
+}
+
+main .carrusel__comentarios .carrusel .carrusel__img .carrusel__img--1 {
+  background-image: url("https://archive.org/download/the_master/the_master.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vh;
+}
+
+main .carrusel__comentarios .carrusel .carrusel__img .carrusel__img--2 {
+  background-image: url("https://ia801404.us.archive.org/15/items/there-will-be-blood_20210821/there-will-be-blood.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vh;
+}
+
+main .carrusel__comentarios .carrusel .carrusel__img .carrusel__img--3 {
+  background-image: url("https://ia801404.us.archive.org/15/items/there-will-be-blood_20210821/inherentvice.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vh;
+}
+
+main .carrusel__comentarios .list-group {
+  width: 30%;
+  height: 100%;
+  padding-left: 1rem;
+  font-family: "Montserrat";
+}
+
+main .carrusel__comentarios .list-group .list-group-item {
+  margin: 3px 0;
+}
+
+main .galeria__hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .galeria__hover .galeria__hover--1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 60vh;
+  padding: 0;
+}
+
+main .galeria__hover .galeria__hover--1 .hover__img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+  margin: 0 1px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+main .galeria__hover .galeria__hover--1 .hover__img:hover {
+  -webkit-box-flex: 15%;
+      -ms-flex: 15%;
+          flex: 15%;
+}
+
+main .galeria__hover .galeria__hover--1 .hover__img .hover__img--1 {
+  background-image: url("https://ia801508.us.archive.org/30/items/poster-20/poster%20%289%29.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200%;
+  height: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .galeria__hover .galeria__hover--1 .hover__img .hover__img--1:hover {
+  width: 100%;
+}
+
+main .galeria__hover .galeria__hover--1 .hover__img .hover__img--2 {
+  background-image: url("https://ia601508.us.archive.org/30/items/poster-20/poster%20%2810%29.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200%;
+  height: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .galeria__hover .galeria__hover--1 .hover__img .hover__img--2:hover {
+  width: 100%;
+}
+
+main .galeria__hover .galeria__hover--1 .hover__img .hover__img--3 {
+  background-image: url("https://ia801508.us.archive.org/30/items/poster-20/poster%20%2819%29.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200%;
+  height: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .galeria__hover .galeria__hover--1 .hover__img .hover__img--3:hover {
+  width: 100%;
+}
+
+main .galeria__hover .galeria__hover--1 .hover__img .hover__img--4 {
+  background-image: url("https://ia801508.us.archive.org/30/items/poster-20/poster%20%2820%29.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200%;
+  height: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .galeria__hover .galeria__hover--1 .hover__img .hover__img--4:hover {
+  width: 100%;
+}
+
+main .galeria__hover .galeria__hover--2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 60vh;
+  padding: 1rem 0 0 0;
+}
+
+main .galeria__hover .galeria__hover--2 .hover__img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+  margin: 0 1px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+main .galeria__hover .galeria__hover--2 .hover__img:hover {
+  -webkit-box-flex: 15%;
+      -ms-flex: 15%;
+          flex: 15%;
+}
+
+main .galeria__hover .galeria__hover--2 .hover__img .hover__img--1 {
+  background-image: url("https://ia601509.us.archive.org/35/items/poster-3/poster%20%283%29.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200%;
+  height: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .galeria__hover .galeria__hover--2 .hover__img .hover__img--1:hover {
+  width: 100%;
+}
+
+main .galeria__hover .galeria__hover--2 .hover__img .hover__img--2 {
+  background-image: url("https://ia801508.us.archive.org/30/items/poster-20/poster%20%2814%29.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200%;
+  height: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .galeria__hover .galeria__hover--2 .hover__img .hover__img--2:hover {
+  width: 100%;
+}
+
+main .galeria__hover .galeria__hover--2 .hover__img .hover__img--3 {
+  background-image: url("https://ia801508.us.archive.org/30/items/poster-20/poster%20%2815%29.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200%;
+  height: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .galeria__hover .galeria__hover--2 .hover__img .hover__img--3:hover {
+  width: 100%;
+}
+
+main .galeria__hover .galeria__hover--2 .hover__img .hover__img--4 {
+  background-image: url("https://ia801508.us.archive.org/30/items/poster-20/poster%20%2816%29.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200%;
+  height: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .galeria__hover .galeria__hover--2 .hover__img .hover__img--4:hover {
+  width: 100%;
+}
+
+footer {
+  height: 200px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+footer .socialMedia ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .socialMedia ul li {
+  padding: 0 1rem;
+  font-size: 2rem;
+}
+
+footer .socialMedia ul li:hover {
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  -webkit-filter: drop-shadow(1px 3px 6px white);
+          filter: drop-shadow(1px 3px 6px white);
+}
+
+footer .sign {
+  font-family: "WindSong", cursive;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+}
+
 @media only screen and (min-width: 0px) {
-  .header__buscador--imput {
-    display: none;
+  header .portada .portada__texto p {
+    font-size: 1.7rem;
   }
-  .grid__galeria {
+  header .portada .portada__texto .portada__boton {
+    border: 3px double white;
+  }
+  main {
+    padding: 0 1%;
+  }
+  main .titulosSecciones {
+    padding-left: 1rem;
+  }
+  main .galeria__grid {
+    grid-gap: 5px;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  .carrusel {
-    height: 500px;
+  main .galeria__grid .grid__img--1 {
+    border: 1px dashed darkgrey;
+    height: 600px;
   }
-  .carrusel__img--c1 {
-    height: 500px;
+  main .galeria__grid .grid__img--2 {
+    border: 1px dashed darkgrey;
+    height: 600px;
   }
-  .carrusel__img--c2 {
-    height: 500px;
+  main .galeria__grid .grid__img--3 {
+    border: 1px dashed darkgrey;
+    height: 600px;
   }
-  .carrusel__img--c3 {
-    height: 500px;
+  main .galeria__grid .grid__img--4 {
+    border: 1px dashed darkgrey;
+    height: 600px;
+  }
+  main .galeria__grid .grid__img--5 {
+    border: 1px dashed darkgrey;
+    height: 600px;
+  }
+  main .galeria__grid .grid__img--6 {
+    border: 1px dashed darkgrey;
+    height: 600px;
+  }
+  main .galeria__grid .grid__img--7 {
+    border: 1px dashed darkgrey;
+    height: 600px;
+  }
+  main .galeria__grid .grid__img--8 {
+    border: 1px dashed darkgrey;
+    height: 600px;
+  }
+  main .carrusel__comentarios {
+    display: block;
+    height: 100%;
+  }
+  main .carrusel__comentarios .carrusel {
+    width: 100%;
+    height: 100%;
+  }
+  main .carrusel__comentarios .carrusel .carrusel__img {
+    height: 100%;
+  }
+  main .carrusel__comentarios .list-group {
+    width: 100%;
+    height: 100%;
+    padding: 1rem 0 0 0;
+  }
+  main .galeria__hover {
+    display: block;
+  }
+  footer .socialMedia {
+    padding: 0 1rem 1rem 0;
+  }
+  footer .socialMedia li {
+    padding: 0 1rem;
+    font-size: 2rem;
+  }
+  footer .sign {
+    font-size: 1rem;
   }
 }
 
 @media only screen and (min-width: 576px) {
-  .grid__galeria {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+  header .portada .portada__texto p {
+    font-size: 3rem;
   }
-  .carrusel {
-    height: 525px;
+  header .portada .portada__texto .portada__boton {
+    border: 5px double white;
   }
-  .carrusel__img--c1 {
-    height: 525px;
+  main {
+    padding: 0 2.5%;
   }
-  .carrusel__img--c2 {
-    height: 525px;
+  main .galeria__grid {
+    grid-gap: 5px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
-  .carrusel__img--c3 {
-    height: 525px;
+  main .galeria__grid .grid__img--1 {
+    border: 1px solid white;
+    height: 800px;
+  }
+  main .galeria__grid .grid__img--2 {
+    border: 1px solid white;
+    height: 800px;
+  }
+  main .galeria__grid .grid__img--3 {
+    border: 1px solid white;
+    height: 800px;
+  }
+  main .galeria__grid .grid__img--4 {
+    border: 1px solid white;
+    height: 800px;
+  }
+  main .galeria__grid .grid__img--5 {
+    border: 1px solid white;
+    height: 800px;
+  }
+  main .galeria__grid .grid__img--6 {
+    border: 1px solid white;
+    height: 800px;
+  }
+  main .galeria__grid .grid__img--7 {
+    border: 1px solid white;
+    height: 800px;
+  }
+  main .galeria__grid .grid__img--8 {
+    border: 1px solid white;
+    height: 800px;
+  }
+  main .galeria__hover {
+    display: block;
+  }
+  footer .sign {
+    font-size: 1.3rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .grid__galeria {
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+  main {
+    padding: 0 5%;
   }
-  .carrusel {
-    height: 550px;
+  main .galeria__grid {
+    grid-gap: 10px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
-  .carrusel__img--c1 {
-    height: 550px;
+  main .galeria__grid .grid__img--1 {
+    height: 650px;
   }
-  .carrusel__img--c2 {
-    height: 550px;
+  main .galeria__grid .grid__img--2 {
+    height: 650px;
   }
-  .carrusel__img--c3 {
-    height: 550px;
+  main .galeria__grid .grid__img--3 {
+    height: 650px;
+  }
+  main .galeria__grid .grid__img--4 {
+    height: 650px;
+  }
+  main .galeria__grid .grid__img--5 {
+    height: 650px;
+  }
+  main .galeria__grid .grid__img--6 {
+    height: 650px;
+  }
+  main .galeria__grid .grid__img--7 {
+    height: 650px;
+  }
+  main .galeria__grid .grid__img--8 {
+    height: 650px;
+  }
+  main .galeria__hover {
+    display: block;
+  }
+  footer .sign {
+    font-size: 1.5rem;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .grid__galeria {
+  main {
+    padding: 0 5%;
+  }
+  main .titulosSecciones {
+    padding: 0;
+  }
+  main .galeria__grid {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
   }
-  .carrusel {
-    height: 550px;
+  main .galeria__grid .grid__img--1 {
+    height: 600px;
   }
-  .carrusel__img--c1 {
-    height: 550px;
+  main .galeria__grid .grid__img--2 {
+    height: 600px;
   }
-  .carrusel__img--c2 {
-    height: 550px;
+  main .galeria__grid .grid__img--3 {
+    height: 600px;
   }
-  .carrusel__img--c3 {
-    height: 550px;
+  main .galeria__grid .grid__img--4 {
+    height: 600px;
+  }
+  main .galeria__grid .grid__img--5 {
+    height: 600px;
+  }
+  main .galeria__grid .grid__img--6 {
+    height: 600px;
+  }
+  main .galeria__grid .grid__img--7 {
+    height: 600px;
+  }
+  main .galeria__grid .grid__img--8 {
+    height: 600px;
+  }
+  main .galeria__hover {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .grid__galeria {
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+  main {
+    padding: 0 7.5%;
   }
-  .carrusel {
-    height: 600px;
+  main .galeria__grid {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
   }
-  .carrusel__img--c1 {
-    height: 600px;
+  main .galeria__grid .grid__img--1 {
+    height: 650px;
   }
-  .carrusel__img--c2 {
-    height: 600px;
+  main .galeria__grid .grid__img--2 {
+    height: 650px;
   }
-  .carrusel__img--c3 {
-    height: 600px;
+  main .galeria__grid .grid__img--3 {
+    height: 650px;
+  }
+  main .galeria__grid .grid__img--4 {
+    height: 650px;
+  }
+  main .galeria__grid .grid__img--5 {
+    height: 650px;
+  }
+  main .galeria__grid .grid__img--6 {
+    height: 650px;
+  }
+  main .galeria__grid .grid__img--7 {
+    height: 650px;
+  }
+  main .galeria__grid .grid__img--8 {
+    height: 650px;
+  }
+  main .galeria__grid .galeria__hover {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
-@media only screen and (min-width: 1400px) {
-  .grid__galeria {
+@media only screen and (min-width: 1200px) and (min-width: 1400px) {
+  main {
+    padding: 0 10%;
+  }
+  main .galeria__grid {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-  .carrusel {
-    height: 600px;
+  main .galeria__grid .grid__img--1 {
+    height: 700px;
   }
-  .carrusel__img--c1 {
-    height: 600px;
+  main .galeria__grid .grid__img--2 {
+    height: 700px;
   }
-  .carrusel__img--c2 {
-    height: 600px;
+  main .galeria__grid .grid__img--3 {
+    height: 700px;
   }
-  .carrusel__img--c3 {
-    height: 600px;
+  main .galeria__grid .grid__img--4 {
+    height: 700px;
+  }
+  main .galeria__grid .grid__img--5 {
+    height: 700px;
+  }
+  main .galeria__grid .grid__img--6 {
+    height: 700px;
+  }
+  main .galeria__grid .grid__img--7 {
+    height: 700px;
+  }
+  main .galeria__grid .grid__img--8 {
+    height: 700px;
+  }
+  main .carrusel__comentarios {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 60vh;
+  }
+  main .carrusel__comentarios .carrusel {
+    width: 70%;
+  }
+  main .carrusel__comentarios .list-group {
+    width: 30%;
+    padding: 0 0 0 1rem;
+  }
+  main .galeria__hover {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 /*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,119 @@
+// FONTS
+@import url("https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap");
+// font-family: 'Palette Mosaic', cursive;
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Palette+Mosaic&display=swap");
+// font-family: "Lobster", cursive;
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+// font-family: 'Shadows Into Light', cursive;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Rampart+One&family=Shadows+Into+Light&family=WindSong:wght@500&display=swap");
+// font-family: 'WindSong', cursive;
+//**********************************
+$bg: #14181c;
+//
+// RESET
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: inherit;
+    list-style: none;
+    text-decoration: none !important;
+}
+.master {
+    width: 100%;
+    min-height: 100vh;
+    background: $bg;
+}
+//
+header {
+    h1 {
+        font-family: "Palette Mosaic", cursive;
+        padding-left: 2rem;
+    }
+    #navbarNav {
+        background: $bg !important;
+        .dropdown-menu {
+            background: $bg;
+            a {
+                text-align: center;
+                padding: 10px 0;
+                span {
+                    padding: 0 10px;
+                }
+                &:hover {
+                    background: $bg !important;
+                }
+            }
+        }
+    }
+}
+main {
+    #main {
+        display: table;
+        width: 100%;
+        height: 80vh;
+        text-align: center;
+        color: white;
+
+        .fof {
+            display: table-cell;
+            vertical-align: middle;
+            font-family: "Shadows Into Light", cursive;
+            h1 {
+                letter-spacing: 5px;
+                font-size: 7rem;
+            }
+            h2 {
+                font-size: 50px;
+                letter-spacing: 5px;
+                display: inline-block;
+                padding-right: 12px;
+                animation: type 0.5s alternate infinite;
+            }
+            h3 {
+                letter-spacing: 5px;
+                font-size: 3rem;
+            }
+        }
+        @keyframes type {
+            from {
+                box-shadow: inset -3px 0px 0px #fff;
+            }
+
+            to {
+                box-shadow: inset -3px 0px 0px transparent;
+            }
+        }
+    }
+}
+//************************
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 992px,
+//   xl: 1200px,
+//   xxl: 1400px,
+
+@media only screen and (min-width: 0px) {
+    .fof {
+        padding: 0 4px;
+    }
+}
+//
+@media only screen and (min-width: 576px) {
+    .fof {
+        padding: 0;
+    }
+}
+//
+@media only screen and (min-width: 768px) {
+}
+//
+@media only screen and (min-width: 992px) {
+}
+//
+@media only screen and (min-width: 1200px) {
+}
+//
+@media only screen and (min-width: 1400px) {
+}

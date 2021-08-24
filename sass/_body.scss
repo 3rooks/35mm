@@ -1,18 +1,25 @@
-html {
-    text-transform: capitalize;
+// FONTS
+@import url("https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap");
+// font-family: 'Palette Mosaic', cursive;
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Palette+Mosaic&display=swap");
+// font-family: "Lobster", cursive;
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+// font-family: 'Shadows Into Light', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Rampart+One&family=Shadows+Into+Light&family=WindSong:wght@500&display=swap');
+// font-family: 'WindSong', cursive;
+//**********************************
+// RESET
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: inherit;
+    list-style: none;
+    text-decoration: none !important;
 }
-
 //
-
-body {
-    background-image: $bg-img;
-
-    p {
-        @include colorTexto();
-        font-family: $fonttext;
-    }
-
-    a {
-        color: $white !important;
-    }
+.master {
+    width: 100%;
+    min-height: 100vh;
+    background: $bg;
 }

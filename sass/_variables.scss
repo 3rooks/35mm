@@ -1,18 +1,87 @@
-// Colores
-
-$white: white;
-$black: black;
-$red: red;
-$green: green;
-$blue: blue;
-
-// 
-
-$colortext: white;
-$fonttext: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+$bg: #14181c;
 //
-
-$bg-img: url("../img/background.png");
-
+$gradient: linear-gradient(
+        90deg,
+        #14181d 0,
+        rgba(20, 24, 29, 0.98556487) 0.97%,
+        rgba(20, 24, 29, 0.9451312) 2.07833333%,
+        rgba(20, 24, 29, 0.88300656) 3.29666667%,
+        rgba(20, 24, 29, 0.80349854) 4.60166667%,
+        rgba(20, 24, 29, 0.71091472) 5.96666667%,
+        rgba(20, 24, 29, 0.60956268) 7.365%,
+        rgba(20, 24, 29, 0.50375) 8.77166667%,
+        rgba(20, 24, 29, 0.39778426) 10.16%,
+        rgba(20, 24, 29, 0.29597303) 11.505%,
+        rgba(20, 24, 29, 0.20262391) 12.78%,
+        rgba(20, 24, 29, 0.12204446) 13.95833333%,
+        rgba(20, 24, 29, 0.05854227) 15.01666667%,
+        rgba(20, 24, 29, 0.01642493) 15.92833333%,
+        rgba(20, 24, 29, 0) 16.66666667%,
+        rgba(20, 24, 29, 0) 83.33333333%,
+        rgba(20, 24, 29, 0.01642493) 84.07166667%,
+        rgba(20, 24, 29, 0.05854227) 84.98333333%,
+        rgba(20, 24, 29, 0.12204446) 86.04166667%,
+        rgba(20, 24, 29, 0.20262391) 87.22%,
+        rgba(20, 24, 29, 0.29597303) 88.495%,
+        rgba(20, 24, 29, 0.39778426) 89.84%,
+        rgba(20, 24, 29, 0.50375) 91.22833333%,
+        rgba(20, 24, 29, 0.60956268) 92.635%,
+        rgba(20, 24, 29, 0.71091472) 94.03333333%,
+        rgba(20, 24, 29, 0.80349854) 95.39833333%,
+        rgba(20, 24, 29, 0.88300656) 96.70333333%,
+        rgba(20, 24, 29, 0.9451312) 97.92166667%,
+        rgba(20, 24, 29, 0.98556487) 99.03%,
+        #14181d
+    ),
+    linear-gradient(
+        0deg,
+        #14181d 0,
+        #14181d 21.48148148%,
+        rgba(20, 24, 29, 0.98556487) 23.63703704%,
+        rgba(20, 24, 29, 0.9451312) 26.1%,
+        rgba(20, 24, 29, 0.88300656) 28.80740741%,
+        rgba(20, 24, 29, 0.80349854) 31.70740741%,
+        rgba(20, 24, 29, 0.71091472) 34.74074074%,
+        rgba(20, 24, 29, 0.60956268) 37.84814815%,
+        rgba(20, 24, 29, 0.50375) 40.97407407%,
+        rgba(20, 24, 29, 0.39778426) 44.05925926%,
+        rgba(20, 24, 29, 0.29597303) 47.04814815%,
+        rgba(20, 24, 29, 0.20262391) 49.88148148%,
+        rgba(20, 24, 29, 0.12204446) 52.5%,
+        rgba(20, 24, 29, 0.05854227) 54.85185185%,
+        rgba(20, 24, 29, 0.01642493) 56.87777778%,
+        rgba(20, 24, 29, 0) 58.51851852%
+    );
+$imgPortada: "https://archive.org/download/the_master/the_master.png";
+$bgPortada: $gradient, url($imgPortada);
+//
+$galeriaGrid: (
+    img--1: "https://ia801504.us.archive.org/13/items/the-return_202108/no%20country%20for%20old%20man.jpg",
+    img--2: "https://ia801504.us.archive.org/13/items/the-return_202108/there%20will%20be%20blood.jpg",
+    img--3: "https://ia801504.us.archive.org/13/items/the-return_202108/inglorious%20basterds.jpg",
+    img--4: "https://ia601504.us.archive.org/13/items/the-return_202108/the%20handmaiden.jpg",
+    img--5: "https://ia601504.us.archive.org/13/items/the-return_202108/the%20return.jpg",
+    img--6: "https://ia601504.us.archive.org/13/items/the-return_202108/the%20lighthouse.jpg",
+    img--7: "https://ia801504.us.archive.org/13/items/the-return_202108/hereditary.jpg",
+    img--8: "https://ia801504.us.archive.org/13/items/the-return_202108/climax.jpg",
+);
 // 
+$carrusel :(
+    img--1: "https://archive.org/download/the_master/the_master.png",
+    img--2: "https://ia801404.us.archive.org/15/items/there-will-be-blood_20210821/there-will-be-blood.jpg",
+    img--3: "https://ia801404.us.archive.org/15/items/there-will-be-blood_20210821/inherentvice.jpg",
+);
+//
+$galeriaHoverUno: (
+    img--1: "https://ia801508.us.archive.org/30/items/poster-20/poster%20%289%29.jpg",
+    img--2: "https://ia601508.us.archive.org/30/items/poster-20/poster%20%2810%29.jpg",
+    img--3: "https://ia801508.us.archive.org/30/items/poster-20/poster%20%2819%29.jpg",
+    img--4: "https://ia801508.us.archive.org/30/items/poster-20/poster%20%2820%29.jpg",
+);
+$galeriaHoverDos: (
+    img--1: "https://ia601509.us.archive.org/35/items/poster-3/poster%20%283%29.jpg",
+    img--2: "https://ia801508.us.archive.org/30/items/poster-20/poster%20%2814%29.jpg",
+    img--3: "https://ia801508.us.archive.org/30/items/poster-20/poster%20%2815%29.jpg",
+    img--4: "https://ia801508.us.archive.org/30/items/poster-20/poster%20%2816%29.jpg",
+);
+//

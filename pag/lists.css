@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Palette+Mosaic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Rampart+One&family=Shadows+Into+Light&family=WindSong:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: inherit;
+  list-style: none;
+  text-decoration: none !important;
+}
+
+.master {
+  width: 100%;
+  min-height: 100vh;
+  background: #14181c;
+}
+
+.master header h1 {
+  font-family: "Palette Mosaic", cursive;
+  padding-left: 2rem;
+}
+
+.master header #navbarNav {
+  background: #14181c !important;
+}
+
+.master header #navbarNav .dropdown-menu {
+  background: #14181c;
+}
+
+.master header #navbarNav .dropdown-menu a {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.master header #navbarNav .dropdown-menu a span {
+  padding: 0 10px;
+}
+
+.master header #navbarNav .dropdown-menu a:hover {
+  background: #14181c !important;
+}
+
+.master main {
+  padding: 0 10%;
+  overflow: hidden;
+}
+
+.master main .bread {
+  padding: 1rem 0 0 1rem;
+}
+
+.master main .bread li {
+  font-family: "Lobster", cursive;
+  letter-spacing: 2px;
+}
+
+.master main .card-img-top:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.master main .card-body .card-title {
+  font-family: "Lobster", cursive;
+  letter-spacing: 2px;
+}
+
+.master main .card-body p {
+  font-family: "monserrat";
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 0px) {
+  main {
+    padding: 0 1% !important;
+  }
+  main .bread {
+    padding: 1rem 0 0 0.5rem !important;
+  }
+  main .bread li {
+    letter-spacing: 0px !important;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  main {
+    padding: 0 2.5% !important;
+  }
+  main .bread {
+    padding: 1rem 0 0 0.5rem !important;
+  }
+  main .bread li {
+    font-family: "Lobster", cursive !important;
+    letter-spacing: 2px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    padding: 0 5% !important;
+  }
+  main .bread {
+    padding: 1rem 0 0 1rem !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  main {
+    padding: 0 7.5% !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  main {
+    padding: 0 10% !important;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  main {
+    padding: 0 10% !important;
+  }
+}
+/*# sourceMappingURL=lists.css.map */
